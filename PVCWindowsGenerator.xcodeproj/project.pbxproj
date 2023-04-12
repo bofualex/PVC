@@ -7,13 +7,65 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
-		171AFE9129E407FE00FBFC05 /* PVCWindowsGeneratorApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = 171AFE9029E407FE00FBFC05 /* PVCWindowsGeneratorApp.swift */; };
-		171AFE9329E407FE00FBFC05 /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 171AFE9229E407FE00FBFC05 /* ContentView.swift */; };
+		171AFE9129E407FE00FBFC05 /* App.swift in Sources */ = {isa = PBXBuildFile; fileRef = 171AFE9029E407FE00FBFC05 /* App.swift */; };
 		171AFE9529E4080000FBFC05 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 171AFE9429E4080000FBFC05 /* Assets.xcassets */; };
 		171AFE9829E4080000FBFC05 /* Preview Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 171AFE9729E4080000FBFC05 /* Preview Assets.xcassets */; };
 		171AFEA229E4080000FBFC05 /* PVCWindowsGeneratorTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 171AFEA129E4080000FBFC05 /* PVCWindowsGeneratorTests.swift */; };
 		171AFEAC29E4080000FBFC05 /* PVCWindowsGeneratorUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 171AFEAB29E4080000FBFC05 /* PVCWindowsGeneratorUITests.swift */; };
 		171AFEAE29E4080000FBFC05 /* PVCWindowsGeneratorUITestsLaunchTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 171AFEAD29E4080000FBFC05 /* PVCWindowsGeneratorUITestsLaunchTests.swift */; };
+		171AFEC329E5310200FBFC05 /* projecthelper.swift in Sources */ = {isa = PBXBuildFile; fileRef = 171AFEC229E5310200FBFC05 /* projecthelper.swift */; };
+		171AFEDA29E5391700FBFC05 /* Localizable.strings in Resources */ = {isa = PBXBuildFile; fileRef = 171AFEDC29E5391700FBFC05 /* Localizable.strings */; };
+		171AFEFB29E5394400FBFC05 /* UIKitStringBundleInitable.swift in Sources */ = {isa = PBXBuildFile; fileRef = 171AFEDF29E5394400FBFC05 /* UIKitStringBundleInitable.swift */; };
+		171AFEFC29E5394400FBFC05 /* UIKitStringRepresentableInitable.swift in Sources */ = {isa = PBXBuildFile; fileRef = 171AFEE029E5394400FBFC05 /* UIKitStringRepresentableInitable.swift */; };
+		171AFEFD29E5394400FBFC05 /* LocalizableStringKey.swift in Sources */ = {isa = PBXBuildFile; fileRef = 171AFEE129E5394400FBFC05 /* LocalizableStringKey.swift */; };
+		171AFEFE29E5394400FBFC05 /* StringRepresentableInitable.swift in Sources */ = {isa = PBXBuildFile; fileRef = 171AFEE229E5394400FBFC05 /* StringRepresentableInitable.swift */; };
+		171AFEFF29E5394400FBFC05 /* SwiftUIStringRepresentableInitable.swift in Sources */ = {isa = PBXBuildFile; fileRef = 171AFEE429E5394400FBFC05 /* SwiftUIStringRepresentableInitable.swift */; };
+		171AFF0029E5394400FBFC05 /* SwiftUIStringBundleInitable.swift in Sources */ = {isa = PBXBuildFile; fileRef = 171AFEE529E5394400FBFC05 /* SwiftUIStringBundleInitable.swift */; };
+		171AFF0129E5394400FBFC05 /* FontSize.swift in Sources */ = {isa = PBXBuildFile; fileRef = 171AFEE729E5394400FBFC05 /* FontSize.swift */; };
+		171AFF0229E5394400FBFC05 /* LocalizableStringKeys.swift in Sources */ = {isa = PBXBuildFile; fileRef = 171AFEE829E5394400FBFC05 /* LocalizableStringKeys.swift */; };
+		171AFF0329E5394400FBFC05 /* AssetName.swift in Sources */ = {isa = PBXBuildFile; fileRef = 171AFEE929E5394400FBFC05 /* AssetName.swift */; };
+		171AFF0429E5394400FBFC05 /* FontType.swift in Sources */ = {isa = PBXBuildFile; fileRef = 171AFEEA29E5394400FBFC05 /* FontType.swift */; };
+		171AFF0529E5394400FBFC05 /* ColorName.swift in Sources */ = {isa = PBXBuildFile; fileRef = 171AFEEB29E5394400FBFC05 /* ColorName.swift */; };
+		171AFF0629E5394400FBFC05 /* UIKit+UIFont-Functions.swift in Sources */ = {isa = PBXBuildFile; fileRef = 171AFEEF29E5394400FBFC05 /* UIKit+UIFont-Functions.swift */; };
+		171AFF0729E5394400FBFC05 /* UIKit+UIFont-Vars.swift in Sources */ = {isa = PBXBuildFile; fileRef = 171AFEF029E5394400FBFC05 /* UIKit+UIFont-Vars.swift */; };
+		171AFF0829E5394400FBFC05 /* UIImage+Assets.swift in Sources */ = {isa = PBXBuildFile; fileRef = 171AFEF129E5394400FBFC05 /* UIImage+Assets.swift */; };
+		171AFF0929E5394400FBFC05 /* UIColor+Colors.swift in Sources */ = {isa = PBXBuildFile; fileRef = 171AFEF229E5394400FBFC05 /* UIColor+Colors.swift */; };
+		171AFF0A29E5394400FBFC05 /* String+LocalizableStringKeys.swift in Sources */ = {isa = PBXBuildFile; fileRef = 171AFEF429E5394400FBFC05 /* String+LocalizableStringKeys.swift */; };
+		171AFF0B29E5394400FBFC05 /* SwiftUI+Font-Functions.swift in Sources */ = {isa = PBXBuildFile; fileRef = 171AFEF729E5394400FBFC05 /* SwiftUI+Font-Functions.swift */; };
+		171AFF0C29E5394400FBFC05 /* SwiftUI+Font-Vars.swift in Sources */ = {isa = PBXBuildFile; fileRef = 171AFEF829E5394400FBFC05 /* SwiftUI+Font-Vars.swift */; };
+		171AFF0D29E5394400FBFC05 /* Color+Colors.swift in Sources */ = {isa = PBXBuildFile; fileRef = 171AFEF929E5394400FBFC05 /* Color+Colors.swift */; };
+		171AFF0E29E5394400FBFC05 /* Image+Assets.swift in Sources */ = {isa = PBXBuildFile; fileRef = 171AFEFA29E5394400FBFC05 /* Image+Assets.swift */; };
+		171AFF1D29E539D800FBFC05 /* Rubik-BlackItalic.ttf in Resources */ = {isa = PBXBuildFile; fileRef = 171AFF0F29E539D800FBFC05 /* Rubik-BlackItalic.ttf */; };
+		171AFF1E29E539D800FBFC05 /* Rubik-BoldItalic.ttf in Resources */ = {isa = PBXBuildFile; fileRef = 171AFF1029E539D800FBFC05 /* Rubik-BoldItalic.ttf */; };
+		171AFF1F29E539D800FBFC05 /* Rubik-Bold.ttf in Resources */ = {isa = PBXBuildFile; fileRef = 171AFF1129E539D800FBFC05 /* Rubik-Bold.ttf */; };
+		171AFF2029E539D800FBFC05 /* Rubik-Italic.ttf in Resources */ = {isa = PBXBuildFile; fileRef = 171AFF1229E539D800FBFC05 /* Rubik-Italic.ttf */; };
+		171AFF2129E539D800FBFC05 /* Rubik-Light.ttf in Resources */ = {isa = PBXBuildFile; fileRef = 171AFF1329E539D800FBFC05 /* Rubik-Light.ttf */; };
+		171AFF2229E539D800FBFC05 /* Rubik-ExtraBold.ttf in Resources */ = {isa = PBXBuildFile; fileRef = 171AFF1429E539D800FBFC05 /* Rubik-ExtraBold.ttf */; };
+		171AFF2329E539D800FBFC05 /* Rubik-ExtraBoldItalic.ttf in Resources */ = {isa = PBXBuildFile; fileRef = 171AFF1529E539D800FBFC05 /* Rubik-ExtraBoldItalic.ttf */; };
+		171AFF2429E539D800FBFC05 /* Rubik-MediumItalic.ttf in Resources */ = {isa = PBXBuildFile; fileRef = 171AFF1629E539D800FBFC05 /* Rubik-MediumItalic.ttf */; };
+		171AFF2529E539D800FBFC05 /* Rubik-LightItalic.ttf in Resources */ = {isa = PBXBuildFile; fileRef = 171AFF1729E539D800FBFC05 /* Rubik-LightItalic.ttf */; };
+		171AFF2629E539D800FBFC05 /* Rubik-SemiBoldItalic.ttf in Resources */ = {isa = PBXBuildFile; fileRef = 171AFF1829E539D800FBFC05 /* Rubik-SemiBoldItalic.ttf */; };
+		171AFF2729E539D800FBFC05 /* Rubik-Black.ttf in Resources */ = {isa = PBXBuildFile; fileRef = 171AFF1929E539D800FBFC05 /* Rubik-Black.ttf */; };
+		171AFF2829E539D800FBFC05 /* Rubik-Regular.ttf in Resources */ = {isa = PBXBuildFile; fileRef = 171AFF1A29E539D800FBFC05 /* Rubik-Regular.ttf */; };
+		171AFF2929E539D800FBFC05 /* Rubik-Medium.ttf in Resources */ = {isa = PBXBuildFile; fileRef = 171AFF1B29E539D800FBFC05 /* Rubik-Medium.ttf */; };
+		171AFF2A29E539D800FBFC05 /* Rubik-SemiBold.ttf in Resources */ = {isa = PBXBuildFile; fileRef = 171AFF1C29E539D800FBFC05 /* Rubik-SemiBold.ttf */; };
+		171AFF2F29E544BF00FBFC05 /* LoginView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 171AFF2E29E544BF00FBFC05 /* LoginView.swift */; };
+		171AFF3129E544CA00FBFC05 /* LoginViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 171AFF3029E544CA00FBFC05 /* LoginViewModel.swift */; };
+		171AFF3429E5450800FBFC05 /* DependencyContainer.swift in Sources */ = {isa = PBXBuildFile; fileRef = 171AFF3329E5450800FBFC05 /* DependencyContainer.swift */; };
+		171AFF3729E5454000FBFC05 /* NetworkService.swift in Sources */ = {isa = PBXBuildFile; fileRef = 171AFF3629E5454000FBFC05 /* NetworkService.swift */; };
+		171AFF3929E5456500FBFC05 /* StorageService.swift in Sources */ = {isa = PBXBuildFile; fileRef = 171AFF3829E5456500FBFC05 /* StorageService.swift */; };
+		171AFF3D29E546E700FBFC05 /* GoogleService-Info.plist in Resources */ = {isa = PBXBuildFile; fileRef = 171AFF3C29E546E700FBFC05 /* GoogleService-Info.plist */; };
+		171AFF4029E547F700FBFC05 /* FirebaseAnalyticsSwift in Frameworks */ = {isa = PBXBuildFile; productRef = 171AFF3F29E547F700FBFC05 /* FirebaseAnalyticsSwift */; };
+		171AFF4229E547F700FBFC05 /* FirebaseAuth in Frameworks */ = {isa = PBXBuildFile; productRef = 171AFF4129E547F700FBFC05 /* FirebaseAuth */; };
+		171AFF4429E547F700FBFC05 /* FirebaseCrashlytics in Frameworks */ = {isa = PBXBuildFile; productRef = 171AFF4329E547F700FBFC05 /* FirebaseCrashlytics */; };
+		171AFF4629E547F700FBFC05 /* FirebaseDatabaseSwift in Frameworks */ = {isa = PBXBuildFile; productRef = 171AFF4529E547F700FBFC05 /* FirebaseDatabaseSwift */; };
+		17D0C5D629E5752D00E6CE0A /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 17D0C5D529E5752D00E6CE0A /* AppDelegate.swift */; };
+		17D0C5D929E575CA00E6CE0A /* AuthenticationService.swift in Sources */ = {isa = PBXBuildFile; fileRef = 17D0C5D829E575CA00E6CE0A /* AuthenticationService.swift */; };
+		17D0C5DB29E5774200E6CE0A /* User.swift in Sources */ = {isa = PBXBuildFile; fileRef = 17D0C5DA29E5774200E6CE0A /* User.swift */; };
+		17D0C5DE29E591CA00E6CE0A /* EmailCheckView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 17D0C5DD29E591CA00E6CE0A /* EmailCheckView.swift */; };
+		17D0C5E029E591D400E6CE0A /* EmailCheckViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 17D0C5DF29E591D400E6CE0A /* EmailCheckViewModel.swift */; };
+		17D0C5E529E599B300E6CE0A /* LaunchScreenView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 17D0C5E429E599B300E6CE0A /* LaunchScreenView.swift */; };
+		17D0C5E829E684AB00E6CE0A /* LoadingView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 17D0C5E729E684AB00E6CE0A /* LoadingView.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -35,8 +87,7 @@
 
 /* Begin PBXFileReference section */
 		171AFE8D29E407FE00FBFC05 /* PVCWindowsGenerator.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = PVCWindowsGenerator.app; sourceTree = BUILT_PRODUCTS_DIR; };
-		171AFE9029E407FE00FBFC05 /* PVCWindowsGeneratorApp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PVCWindowsGeneratorApp.swift; sourceTree = "<group>"; };
-		171AFE9229E407FE00FBFC05 /* ContentView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContentView.swift; sourceTree = "<group>"; };
+		171AFE9029E407FE00FBFC05 /* App.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = App.swift; sourceTree = "<group>"; };
 		171AFE9429E4080000FBFC05 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		171AFE9729E4080000FBFC05 /* Preview Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = "Preview Assets.xcassets"; sourceTree = "<group>"; };
 		171AFE9D29E4080000FBFC05 /* PVCWindowsGeneratorTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = PVCWindowsGeneratorTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
@@ -44,6 +95,56 @@
 		171AFEA729E4080000FBFC05 /* PVCWindowsGeneratorUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = PVCWindowsGeneratorUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		171AFEAB29E4080000FBFC05 /* PVCWindowsGeneratorUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PVCWindowsGeneratorUITests.swift; sourceTree = "<group>"; };
 		171AFEAD29E4080000FBFC05 /* PVCWindowsGeneratorUITestsLaunchTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PVCWindowsGeneratorUITestsLaunchTests.swift; sourceTree = "<group>"; };
+		171AFEC229E5310200FBFC05 /* projecthelper.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = projecthelper.swift; sourceTree = "<group>"; };
+		171AFEDB29E5391700FBFC05 /* en */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = en; path = en.lproj/Localizable.strings; sourceTree = "<group>"; };
+		171AFEDF29E5394400FBFC05 /* UIKitStringBundleInitable.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = UIKitStringBundleInitable.swift; sourceTree = "<group>"; };
+		171AFEE029E5394400FBFC05 /* UIKitStringRepresentableInitable.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = UIKitStringRepresentableInitable.swift; sourceTree = "<group>"; };
+		171AFEE129E5394400FBFC05 /* LocalizableStringKey.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = LocalizableStringKey.swift; sourceTree = "<group>"; };
+		171AFEE229E5394400FBFC05 /* StringRepresentableInitable.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = StringRepresentableInitable.swift; sourceTree = "<group>"; };
+		171AFEE429E5394400FBFC05 /* SwiftUIStringRepresentableInitable.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SwiftUIStringRepresentableInitable.swift; sourceTree = "<group>"; };
+		171AFEE529E5394400FBFC05 /* SwiftUIStringBundleInitable.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SwiftUIStringBundleInitable.swift; sourceTree = "<group>"; };
+		171AFEE729E5394400FBFC05 /* FontSize.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = FontSize.swift; sourceTree = "<group>"; };
+		171AFEE829E5394400FBFC05 /* LocalizableStringKeys.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = LocalizableStringKeys.swift; sourceTree = "<group>"; };
+		171AFEE929E5394400FBFC05 /* AssetName.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = AssetName.swift; sourceTree = "<group>"; };
+		171AFEEA29E5394400FBFC05 /* FontType.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = FontType.swift; sourceTree = "<group>"; };
+		171AFEEB29E5394400FBFC05 /* ColorName.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ColorName.swift; sourceTree = "<group>"; };
+		171AFEEF29E5394400FBFC05 /* UIKit+UIFont-Functions.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "UIKit+UIFont-Functions.swift"; sourceTree = "<group>"; };
+		171AFEF029E5394400FBFC05 /* UIKit+UIFont-Vars.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "UIKit+UIFont-Vars.swift"; sourceTree = "<group>"; };
+		171AFEF129E5394400FBFC05 /* UIImage+Assets.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "UIImage+Assets.swift"; sourceTree = "<group>"; };
+		171AFEF229E5394400FBFC05 /* UIColor+Colors.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "UIColor+Colors.swift"; sourceTree = "<group>"; };
+		171AFEF429E5394400FBFC05 /* String+LocalizableStringKeys.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "String+LocalizableStringKeys.swift"; sourceTree = "<group>"; };
+		171AFEF729E5394400FBFC05 /* SwiftUI+Font-Functions.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "SwiftUI+Font-Functions.swift"; sourceTree = "<group>"; };
+		171AFEF829E5394400FBFC05 /* SwiftUI+Font-Vars.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "SwiftUI+Font-Vars.swift"; sourceTree = "<group>"; };
+		171AFEF929E5394400FBFC05 /* Color+Colors.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "Color+Colors.swift"; sourceTree = "<group>"; };
+		171AFEFA29E5394400FBFC05 /* Image+Assets.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "Image+Assets.swift"; sourceTree = "<group>"; };
+		171AFF0F29E539D800FBFC05 /* Rubik-BlackItalic.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "Rubik-BlackItalic.ttf"; sourceTree = "<group>"; };
+		171AFF1029E539D800FBFC05 /* Rubik-BoldItalic.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "Rubik-BoldItalic.ttf"; sourceTree = "<group>"; };
+		171AFF1129E539D800FBFC05 /* Rubik-Bold.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "Rubik-Bold.ttf"; sourceTree = "<group>"; };
+		171AFF1229E539D800FBFC05 /* Rubik-Italic.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "Rubik-Italic.ttf"; sourceTree = "<group>"; };
+		171AFF1329E539D800FBFC05 /* Rubik-Light.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "Rubik-Light.ttf"; sourceTree = "<group>"; };
+		171AFF1429E539D800FBFC05 /* Rubik-ExtraBold.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "Rubik-ExtraBold.ttf"; sourceTree = "<group>"; };
+		171AFF1529E539D800FBFC05 /* Rubik-ExtraBoldItalic.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "Rubik-ExtraBoldItalic.ttf"; sourceTree = "<group>"; };
+		171AFF1629E539D800FBFC05 /* Rubik-MediumItalic.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "Rubik-MediumItalic.ttf"; sourceTree = "<group>"; };
+		171AFF1729E539D800FBFC05 /* Rubik-LightItalic.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "Rubik-LightItalic.ttf"; sourceTree = "<group>"; };
+		171AFF1829E539D800FBFC05 /* Rubik-SemiBoldItalic.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "Rubik-SemiBoldItalic.ttf"; sourceTree = "<group>"; };
+		171AFF1929E539D800FBFC05 /* Rubik-Black.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "Rubik-Black.ttf"; sourceTree = "<group>"; };
+		171AFF1A29E539D800FBFC05 /* Rubik-Regular.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "Rubik-Regular.ttf"; sourceTree = "<group>"; };
+		171AFF1B29E539D800FBFC05 /* Rubik-Medium.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "Rubik-Medium.ttf"; sourceTree = "<group>"; };
+		171AFF1C29E539D800FBFC05 /* Rubik-SemiBold.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "Rubik-SemiBold.ttf"; sourceTree = "<group>"; };
+		171AFF2E29E544BF00FBFC05 /* LoginView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LoginView.swift; sourceTree = "<group>"; };
+		171AFF3029E544CA00FBFC05 /* LoginViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LoginViewModel.swift; sourceTree = "<group>"; };
+		171AFF3329E5450800FBFC05 /* DependencyContainer.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DependencyContainer.swift; sourceTree = "<group>"; };
+		171AFF3629E5454000FBFC05 /* NetworkService.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NetworkService.swift; sourceTree = "<group>"; };
+		171AFF3829E5456500FBFC05 /* StorageService.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = StorageService.swift; sourceTree = "<group>"; };
+		171AFF3C29E546E700FBFC05 /* GoogleService-Info.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = "GoogleService-Info.plist"; sourceTree = "<group>"; };
+		17D0C5D529E5752D00E6CE0A /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
+		17D0C5D829E575CA00E6CE0A /* AuthenticationService.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AuthenticationService.swift; sourceTree = "<group>"; };
+		17D0C5DA29E5774200E6CE0A /* User.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = User.swift; sourceTree = "<group>"; };
+		17D0C5DD29E591CA00E6CE0A /* EmailCheckView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = EmailCheckView.swift; sourceTree = "<group>"; };
+		17D0C5DF29E591D400E6CE0A /* EmailCheckViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = EmailCheckViewModel.swift; sourceTree = "<group>"; };
+		17D0C5E429E599B300E6CE0A /* LaunchScreenView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LaunchScreenView.swift; sourceTree = "<group>"; };
+		17D0C5E729E684AB00E6CE0A /* LoadingView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LoadingView.swift; sourceTree = "<group>"; };
+		17D0C5EB29E68B2E00E6CE0A /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -51,6 +152,10 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				171AFF4629E547F700FBFC05 /* FirebaseDatabaseSwift in Frameworks */,
+				171AFF4429E547F700FBFC05 /* FirebaseCrashlytics in Frameworks */,
+				171AFF4029E547F700FBFC05 /* FirebaseAnalyticsSwift in Frameworks */,
+				171AFF4229E547F700FBFC05 /* FirebaseAuth in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -94,9 +199,17 @@
 		171AFE8F29E407FE00FBFC05 /* PVCWindowsGenerator */ = {
 			isa = PBXGroup;
 			children = (
-				171AFE9029E407FE00FBFC05 /* PVCWindowsGeneratorApp.swift */,
-				171AFE9229E407FE00FBFC05 /* ContentView.swift */,
+				17D0C5D529E5752D00E6CE0A /* AppDelegate.swift */,
+				171AFE9029E407FE00FBFC05 /* App.swift */,
 				171AFE9429E4080000FBFC05 /* Assets.xcassets */,
+				17D0C5EB29E68B2E00E6CE0A /* Info.plist */,
+				171AFEBA29E4081F00FBFC05 /* Flows */,
+				171AFEBD29E408CE00FBFC05 /* Services */,
+				171AFEBC29E408A900FBFC05 /* Models */,
+				171AFEBB29E4082C00FBFC05 /* Reusables */,
+				171AFEBE29E408DC00FBFC05 /* Utils */,
+				171AFEC829E5331400FBFC05 /* Generated */,
+				171AFEC429E531B300FBFC05 /* Resources */,
 				171AFE9629E4080000FBFC05 /* Preview Content */,
 			);
 			path = PVCWindowsGenerator;
@@ -127,6 +240,287 @@
 			path = PVCWindowsGeneratorUITests;
 			sourceTree = "<group>";
 		};
+		171AFEBA29E4081F00FBFC05 /* Flows */ = {
+			isa = PBXGroup;
+			children = (
+				17D0C5E329E5998A00E6CE0A /* Launch Screen */,
+				171AFEBF29E530A700FBFC05 /* Auth */,
+			);
+			path = Flows;
+			sourceTree = "<group>";
+		};
+		171AFEBB29E4082C00FBFC05 /* Reusables */ = {
+			isa = PBXGroup;
+			children = (
+				17D0C5E629E6849700E6CE0A /* Loading View */,
+			);
+			path = Reusables;
+			sourceTree = "<group>";
+		};
+		171AFEBC29E408A900FBFC05 /* Models */ = {
+			isa = PBXGroup;
+			children = (
+				17D0C5DA29E5774200E6CE0A /* User.swift */,
+			);
+			path = Models;
+			sourceTree = "<group>";
+		};
+		171AFEBD29E408CE00FBFC05 /* Services */ = {
+			isa = PBXGroup;
+			children = (
+				17D0C5D729E5758C00E6CE0A /* Auth Service */,
+				171AFF3A29E5456B00FBFC05 /* Storage Service */,
+				171AFF3529E5452B00FBFC05 /* Network Service */,
+				171AFF3229E544F300FBFC05 /* Dependency Container */,
+			);
+			path = Services;
+			sourceTree = "<group>";
+		};
+		171AFEBE29E408DC00FBFC05 /* Utils */ = {
+			isa = PBXGroup;
+			children = (
+				171AFEC229E5310200FBFC05 /* projecthelper.swift */,
+			);
+			path = Utils;
+			sourceTree = "<group>";
+		};
+		171AFEBF29E530A700FBFC05 /* Auth */ = {
+			isa = PBXGroup;
+			children = (
+				17D0C5DC29E591B300E6CE0A /* Email Check */,
+				171AFEC129E530BA00FBFC05 /* Signup */,
+				171AFEC029E530B200FBFC05 /* Login */,
+			);
+			path = Auth;
+			sourceTree = "<group>";
+		};
+		171AFEC029E530B200FBFC05 /* Login */ = {
+			isa = PBXGroup;
+			children = (
+				171AFF2E29E544BF00FBFC05 /* LoginView.swift */,
+				171AFF3029E544CA00FBFC05 /* LoginViewModel.swift */,
+			);
+			path = Login;
+			sourceTree = "<group>";
+		};
+		171AFEC129E530BA00FBFC05 /* Signup */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = Signup;
+			sourceTree = "<group>";
+		};
+		171AFEC429E531B300FBFC05 /* Resources */ = {
+			isa = PBXGroup;
+			children = (
+				171AFF3B29E546D200FBFC05 /* Firebase */,
+				171AFED729E5334F00FBFC05 /* Localization */,
+				171AFED629E5333A00FBFC05 /* Fonts */,
+			);
+			path = Resources;
+			sourceTree = "<group>";
+		};
+		171AFEC829E5331400FBFC05 /* Generated */ = {
+			isa = PBXGroup;
+			children = (
+				171AFEE629E5394400FBFC05 /* Enums */,
+				171AFEEC29E5394400FBFC05 /* Extensions */,
+				171AFEDD29E5394400FBFC05 /* Protocols */,
+			);
+			path = Generated;
+			sourceTree = "<group>";
+		};
+		171AFED629E5333A00FBFC05 /* Fonts */ = {
+			isa = PBXGroup;
+			children = (
+				171AFF1929E539D800FBFC05 /* Rubik-Black.ttf */,
+				171AFF0F29E539D800FBFC05 /* Rubik-BlackItalic.ttf */,
+				171AFF1129E539D800FBFC05 /* Rubik-Bold.ttf */,
+				171AFF1029E539D800FBFC05 /* Rubik-BoldItalic.ttf */,
+				171AFF1429E539D800FBFC05 /* Rubik-ExtraBold.ttf */,
+				171AFF1529E539D800FBFC05 /* Rubik-ExtraBoldItalic.ttf */,
+				171AFF1229E539D800FBFC05 /* Rubik-Italic.ttf */,
+				171AFF1329E539D800FBFC05 /* Rubik-Light.ttf */,
+				171AFF1729E539D800FBFC05 /* Rubik-LightItalic.ttf */,
+				171AFF1B29E539D800FBFC05 /* Rubik-Medium.ttf */,
+				171AFF1629E539D800FBFC05 /* Rubik-MediumItalic.ttf */,
+				171AFF1A29E539D800FBFC05 /* Rubik-Regular.ttf */,
+				171AFF1C29E539D800FBFC05 /* Rubik-SemiBold.ttf */,
+				171AFF1829E539D800FBFC05 /* Rubik-SemiBoldItalic.ttf */,
+			);
+			path = Fonts;
+			sourceTree = "<group>";
+		};
+		171AFED729E5334F00FBFC05 /* Localization */ = {
+			isa = PBXGroup;
+			children = (
+				171AFEDC29E5391700FBFC05 /* Localizable.strings */,
+			);
+			path = Localization;
+			sourceTree = "<group>";
+		};
+		171AFEDD29E5394400FBFC05 /* Protocols */ = {
+			isa = PBXGroup;
+			children = (
+				171AFEDE29E5394400FBFC05 /* UIKit */,
+				171AFEE129E5394400FBFC05 /* LocalizableStringKey.swift */,
+				171AFEE229E5394400FBFC05 /* StringRepresentableInitable.swift */,
+				171AFEE329E5394400FBFC05 /* SwiftUI */,
+			);
+			path = Protocols;
+			sourceTree = "<group>";
+		};
+		171AFEDE29E5394400FBFC05 /* UIKit */ = {
+			isa = PBXGroup;
+			children = (
+				171AFEDF29E5394400FBFC05 /* UIKitStringBundleInitable.swift */,
+				171AFEE029E5394400FBFC05 /* UIKitStringRepresentableInitable.swift */,
+			);
+			path = UIKit;
+			sourceTree = "<group>";
+		};
+		171AFEE329E5394400FBFC05 /* SwiftUI */ = {
+			isa = PBXGroup;
+			children = (
+				171AFEE429E5394400FBFC05 /* SwiftUIStringRepresentableInitable.swift */,
+				171AFEE529E5394400FBFC05 /* SwiftUIStringBundleInitable.swift */,
+			);
+			path = SwiftUI;
+			sourceTree = "<group>";
+		};
+		171AFEE629E5394400FBFC05 /* Enums */ = {
+			isa = PBXGroup;
+			children = (
+				171AFEE729E5394400FBFC05 /* FontSize.swift */,
+				171AFEE829E5394400FBFC05 /* LocalizableStringKeys.swift */,
+				171AFEE929E5394400FBFC05 /* AssetName.swift */,
+				171AFEEA29E5394400FBFC05 /* FontType.swift */,
+				171AFEEB29E5394400FBFC05 /* ColorName.swift */,
+			);
+			path = Enums;
+			sourceTree = "<group>";
+		};
+		171AFEEC29E5394400FBFC05 /* Extensions */ = {
+			isa = PBXGroup;
+			children = (
+				171AFEED29E5394400FBFC05 /* UIKit */,
+				171AFEF329E5394400FBFC05 /* Foundation */,
+				171AFEF529E5394400FBFC05 /* SwiftUI */,
+			);
+			path = Extensions;
+			sourceTree = "<group>";
+		};
+		171AFEED29E5394400FBFC05 /* UIKit */ = {
+			isa = PBXGroup;
+			children = (
+				171AFEEE29E5394400FBFC05 /* UIFont */,
+				171AFEF129E5394400FBFC05 /* UIImage+Assets.swift */,
+				171AFEF229E5394400FBFC05 /* UIColor+Colors.swift */,
+			);
+			path = UIKit;
+			sourceTree = "<group>";
+		};
+		171AFEEE29E5394400FBFC05 /* UIFont */ = {
+			isa = PBXGroup;
+			children = (
+				171AFEEF29E5394400FBFC05 /* UIKit+UIFont-Functions.swift */,
+				171AFEF029E5394400FBFC05 /* UIKit+UIFont-Vars.swift */,
+			);
+			path = UIFont;
+			sourceTree = "<group>";
+		};
+		171AFEF329E5394400FBFC05 /* Foundation */ = {
+			isa = PBXGroup;
+			children = (
+				171AFEF429E5394400FBFC05 /* String+LocalizableStringKeys.swift */,
+			);
+			path = Foundation;
+			sourceTree = "<group>";
+		};
+		171AFEF529E5394400FBFC05 /* SwiftUI */ = {
+			isa = PBXGroup;
+			children = (
+				171AFEF629E5394400FBFC05 /* Font */,
+				171AFEF929E5394400FBFC05 /* Color+Colors.swift */,
+				171AFEFA29E5394400FBFC05 /* Image+Assets.swift */,
+			);
+			path = SwiftUI;
+			sourceTree = "<group>";
+		};
+		171AFEF629E5394400FBFC05 /* Font */ = {
+			isa = PBXGroup;
+			children = (
+				171AFEF729E5394400FBFC05 /* SwiftUI+Font-Functions.swift */,
+				171AFEF829E5394400FBFC05 /* SwiftUI+Font-Vars.swift */,
+			);
+			path = Font;
+			sourceTree = "<group>";
+		};
+		171AFF3229E544F300FBFC05 /* Dependency Container */ = {
+			isa = PBXGroup;
+			children = (
+				171AFF3329E5450800FBFC05 /* DependencyContainer.swift */,
+			);
+			path = "Dependency Container";
+			sourceTree = "<group>";
+		};
+		171AFF3529E5452B00FBFC05 /* Network Service */ = {
+			isa = PBXGroup;
+			children = (
+				171AFF3629E5454000FBFC05 /* NetworkService.swift */,
+			);
+			path = "Network Service";
+			sourceTree = "<group>";
+		};
+		171AFF3A29E5456B00FBFC05 /* Storage Service */ = {
+			isa = PBXGroup;
+			children = (
+				171AFF3829E5456500FBFC05 /* StorageService.swift */,
+			);
+			path = "Storage Service";
+			sourceTree = "<group>";
+		};
+		171AFF3B29E546D200FBFC05 /* Firebase */ = {
+			isa = PBXGroup;
+			children = (
+				171AFF3C29E546E700FBFC05 /* GoogleService-Info.plist */,
+			);
+			path = Firebase;
+			sourceTree = "<group>";
+		};
+		17D0C5D729E5758C00E6CE0A /* Auth Service */ = {
+			isa = PBXGroup;
+			children = (
+				17D0C5D829E575CA00E6CE0A /* AuthenticationService.swift */,
+			);
+			path = "Auth Service";
+			sourceTree = "<group>";
+		};
+		17D0C5DC29E591B300E6CE0A /* Email Check */ = {
+			isa = PBXGroup;
+			children = (
+				17D0C5DD29E591CA00E6CE0A /* EmailCheckView.swift */,
+				17D0C5DF29E591D400E6CE0A /* EmailCheckViewModel.swift */,
+			);
+			path = "Email Check";
+			sourceTree = "<group>";
+		};
+		17D0C5E329E5998A00E6CE0A /* Launch Screen */ = {
+			isa = PBXGroup;
+			children = (
+				17D0C5E429E599B300E6CE0A /* LaunchScreenView.swift */,
+			);
+			path = "Launch Screen";
+			sourceTree = "<group>";
+		};
+		17D0C5E629E6849700E6CE0A /* Loading View */ = {
+			isa = PBXGroup;
+			children = (
+				17D0C5E729E684AB00E6CE0A /* LoadingView.swift */,
+			);
+			path = "Loading View";
+			sourceTree = "<group>";
+		};
 /* End PBXGroup section */
 
 /* Begin PBXNativeTarget section */
@@ -143,6 +537,12 @@
 			dependencies = (
 			);
 			name = PVCWindowsGenerator;
+			packageProductDependencies = (
+				171AFF3F29E547F700FBFC05 /* FirebaseAnalyticsSwift */,
+				171AFF4129E547F700FBFC05 /* FirebaseAuth */,
+				171AFF4329E547F700FBFC05 /* FirebaseCrashlytics */,
+				171AFF4529E547F700FBFC05 /* FirebaseDatabaseSwift */,
+			);
 			productName = PVCWindowsGenerator;
 			productReference = 171AFE8D29E407FE00FBFC05 /* PVCWindowsGenerator.app */;
 			productType = "com.apple.product-type.application";
@@ -212,9 +612,11 @@
 			hasScannedForEncodings = 0;
 			knownRegions = (
 				en,
-				Base,
 			);
 			mainGroup = 171AFE8429E407FE00FBFC05;
+			packageReferences = (
+				171AFF3E29E547F700FBFC05 /* XCRemoteSwiftPackageReference "firebase-ios-sdk" */,
+			);
 			productRefGroup = 171AFE8E29E407FE00FBFC05 /* Products */;
 			projectDirPath = "";
 			projectRoot = "";
@@ -231,7 +633,23 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				171AFF1E29E539D800FBFC05 /* Rubik-BoldItalic.ttf in Resources */,
+				171AFF2229E539D800FBFC05 /* Rubik-ExtraBold.ttf in Resources */,
+				171AFF2629E539D800FBFC05 /* Rubik-SemiBoldItalic.ttf in Resources */,
+				171AFF1F29E539D800FBFC05 /* Rubik-Bold.ttf in Resources */,
 				171AFE9829E4080000FBFC05 /* Preview Assets.xcassets in Resources */,
+				171AFEDA29E5391700FBFC05 /* Localizable.strings in Resources */,
+				171AFF2A29E539D800FBFC05 /* Rubik-SemiBold.ttf in Resources */,
+				171AFF2029E539D800FBFC05 /* Rubik-Italic.ttf in Resources */,
+				171AFF2929E539D800FBFC05 /* Rubik-Medium.ttf in Resources */,
+				171AFF2129E539D800FBFC05 /* Rubik-Light.ttf in Resources */,
+				171AFF3D29E546E700FBFC05 /* GoogleService-Info.plist in Resources */,
+				171AFF1D29E539D800FBFC05 /* Rubik-BlackItalic.ttf in Resources */,
+				171AFF2329E539D800FBFC05 /* Rubik-ExtraBoldItalic.ttf in Resources */,
+				171AFF2729E539D800FBFC05 /* Rubik-Black.ttf in Resources */,
+				171AFF2529E539D800FBFC05 /* Rubik-LightItalic.ttf in Resources */,
+				171AFF2429E539D800FBFC05 /* Rubik-MediumItalic.ttf in Resources */,
+				171AFF2829E539D800FBFC05 /* Rubik-Regular.ttf in Resources */,
 				171AFE9529E4080000FBFC05 /* Assets.xcassets in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -257,8 +675,40 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				171AFE9329E407FE00FBFC05 /* ContentView.swift in Sources */,
-				171AFE9129E407FE00FBFC05 /* PVCWindowsGeneratorApp.swift in Sources */,
+				171AFEFC29E5394400FBFC05 /* UIKitStringRepresentableInitable.swift in Sources */,
+				17D0C5E029E591D400E6CE0A /* EmailCheckViewModel.swift in Sources */,
+				171AFF0929E5394400FBFC05 /* UIColor+Colors.swift in Sources */,
+				171AFF0729E5394400FBFC05 /* UIKit+UIFont-Vars.swift in Sources */,
+				171AFF0829E5394400FBFC05 /* UIImage+Assets.swift in Sources */,
+				17D0C5DB29E5774200E6CE0A /* User.swift in Sources */,
+				17D0C5D629E5752D00E6CE0A /* AppDelegate.swift in Sources */,
+				171AFF0129E5394400FBFC05 /* FontSize.swift in Sources */,
+				171AFF0A29E5394400FBFC05 /* String+LocalizableStringKeys.swift in Sources */,
+				171AFF3429E5450800FBFC05 /* DependencyContainer.swift in Sources */,
+				171AFF2F29E544BF00FBFC05 /* LoginView.swift in Sources */,
+				17D0C5D929E575CA00E6CE0A /* AuthenticationService.swift in Sources */,
+				171AFEFF29E5394400FBFC05 /* SwiftUIStringRepresentableInitable.swift in Sources */,
+				171AFF0D29E5394400FBFC05 /* Color+Colors.swift in Sources */,
+				171AFEC329E5310200FBFC05 /* projecthelper.swift in Sources */,
+				171AFEFB29E5394400FBFC05 /* UIKitStringBundleInitable.swift in Sources */,
+				171AFF0E29E5394400FBFC05 /* Image+Assets.swift in Sources */,
+				17D0C5DE29E591CA00E6CE0A /* EmailCheckView.swift in Sources */,
+				171AFF3929E5456500FBFC05 /* StorageService.swift in Sources */,
+				171AFF3729E5454000FBFC05 /* NetworkService.swift in Sources */,
+				171AFF0229E5394400FBFC05 /* LocalizableStringKeys.swift in Sources */,
+				171AFF3129E544CA00FBFC05 /* LoginViewModel.swift in Sources */,
+				171AFF0529E5394400FBFC05 /* ColorName.swift in Sources */,
+				171AFF0629E5394400FBFC05 /* UIKit+UIFont-Functions.swift in Sources */,
+				171AFF0429E5394400FBFC05 /* FontType.swift in Sources */,
+				171AFEFD29E5394400FBFC05 /* LocalizableStringKey.swift in Sources */,
+				171AFF0329E5394400FBFC05 /* AssetName.swift in Sources */,
+				171AFEFE29E5394400FBFC05 /* StringRepresentableInitable.swift in Sources */,
+				17D0C5E529E599B300E6CE0A /* LaunchScreenView.swift in Sources */,
+				171AFE9129E407FE00FBFC05 /* App.swift in Sources */,
+				171AFF0C29E5394400FBFC05 /* SwiftUI+Font-Vars.swift in Sources */,
+				171AFF0B29E5394400FBFC05 /* SwiftUI+Font-Functions.swift in Sources */,
+				17D0C5E829E684AB00E6CE0A /* LoadingView.swift in Sources */,
+				171AFF0029E5394400FBFC05 /* SwiftUIStringBundleInitable.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -293,6 +743,17 @@
 			targetProxy = 171AFEA829E4080000FBFC05 /* PBXContainerItemProxy */;
 		};
 /* End PBXTargetDependency section */
+
+/* Begin PBXVariantGroup section */
+		171AFEDC29E5391700FBFC05 /* Localizable.strings */ = {
+			isa = PBXVariantGroup;
+			children = (
+				171AFEDB29E5391700FBFC05 /* en */,
+			);
+			name = Localizable.strings;
+			sourceTree = "<group>";
+		};
+/* End PBXVariantGroup section */
 
 /* Begin XCBuildConfiguration section */
 		171AFEAF29E4080000FBFC05 /* Debug */ = {
@@ -345,7 +806,7 @@
 				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
 				GCC_WARN_UNUSED_FUNCTION = YES;
 				GCC_WARN_UNUSED_VARIABLE = YES;
-				IPHONEOS_DEPLOYMENT_TARGET = 16.4;
+				IPHONEOS_DEPLOYMENT_TARGET = 16.0;
 				MTL_ENABLE_DEBUG_INFO = INCLUDE_SOURCE;
 				MTL_FAST_MATH = YES;
 				ONLY_ACTIVE_ARCH = YES;
@@ -399,7 +860,7 @@
 				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
 				GCC_WARN_UNUSED_FUNCTION = YES;
 				GCC_WARN_UNUSED_VARIABLE = YES;
-				IPHONEOS_DEPLOYMENT_TARGET = 16.4;
+				IPHONEOS_DEPLOYMENT_TARGET = 16.0;
 				MTL_ENABLE_DEBUG_INFO = NO;
 				MTL_FAST_MATH = YES;
 				SDKROOT = iphoneos;
@@ -420,16 +881,19 @@
 				DEVELOPMENT_TEAM = A238F2XKGT;
 				ENABLE_PREVIEWS = YES;
 				GENERATE_INFOPLIST_FILE = YES;
-				INFOPLIST_KEY_UIApplicationSceneManifest_Generation = YES;
+				INFOPLIST_FILE = PVCWindowsGenerator/Info.plist;
+				INFOPLIST_KEY_LSApplicationCategoryType = "public.app-category.productivity";
 				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
 				INFOPLIST_KEY_UILaunchScreen_Generation = YES;
-				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
-				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPhone = "UIInterfaceOrientationPortrait UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				INFOPLIST_KEY_UIStatusBarStyle = "";
+				INFOPLIST_KEY_UISupportedInterfaceOrientations = UIInterfaceOrientationPortrait;
+				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown";
+				IPHONEOS_DEPLOYMENT_TARGET = 16.0;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
 				);
-				MARKETING_VERSION = 1.0;
+				MARKETING_VERSION = 0.1;
 				PRODUCT_BUNDLE_IDENTIFIER = com.alexbofu.PVCWindowsGenerator;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SWIFT_EMIT_LOC_STRINGS = YES;
@@ -449,16 +913,19 @@
 				DEVELOPMENT_TEAM = A238F2XKGT;
 				ENABLE_PREVIEWS = YES;
 				GENERATE_INFOPLIST_FILE = YES;
-				INFOPLIST_KEY_UIApplicationSceneManifest_Generation = YES;
+				INFOPLIST_FILE = PVCWindowsGenerator/Info.plist;
+				INFOPLIST_KEY_LSApplicationCategoryType = "public.app-category.productivity";
 				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
 				INFOPLIST_KEY_UILaunchScreen_Generation = YES;
-				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
-				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPhone = "UIInterfaceOrientationPortrait UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				INFOPLIST_KEY_UIStatusBarStyle = "";
+				INFOPLIST_KEY_UISupportedInterfaceOrientations = UIInterfaceOrientationPortrait;
+				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown";
+				IPHONEOS_DEPLOYMENT_TARGET = 16.0;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
 				);
-				MARKETING_VERSION = 1.0;
+				MARKETING_VERSION = 0.1;
 				PRODUCT_BUNDLE_IDENTIFIER = com.alexbofu.PVCWindowsGenerator;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SWIFT_EMIT_LOC_STRINGS = YES;
@@ -476,7 +943,7 @@
 				CURRENT_PROJECT_VERSION = 1;
 				DEVELOPMENT_TEAM = A238F2XKGT;
 				GENERATE_INFOPLIST_FILE = YES;
-				IPHONEOS_DEPLOYMENT_TARGET = 16.4;
+				IPHONEOS_DEPLOYMENT_TARGET = 16.0;
 				MARKETING_VERSION = 1.0;
 				PRODUCT_BUNDLE_IDENTIFIER = com.alexbofu.PVCWindowsGeneratorTests;
 				PRODUCT_NAME = "$(TARGET_NAME)";
@@ -496,7 +963,7 @@
 				CURRENT_PROJECT_VERSION = 1;
 				DEVELOPMENT_TEAM = A238F2XKGT;
 				GENERATE_INFOPLIST_FILE = YES;
-				IPHONEOS_DEPLOYMENT_TARGET = 16.4;
+				IPHONEOS_DEPLOYMENT_TARGET = 16.0;
 				MARKETING_VERSION = 1.0;
 				PRODUCT_BUNDLE_IDENTIFIER = com.alexbofu.PVCWindowsGeneratorTests;
 				PRODUCT_NAME = "$(TARGET_NAME)";
@@ -583,6 +1050,40 @@
 			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
+
+/* Begin XCRemoteSwiftPackageReference section */
+		171AFF3E29E547F700FBFC05 /* XCRemoteSwiftPackageReference "firebase-ios-sdk" */ = {
+			isa = XCRemoteSwiftPackageReference;
+			repositoryURL = "https://github.com/firebase/firebase-ios-sdk.git";
+			requirement = {
+				kind = upToNextMajorVersion;
+				minimumVersion = 10.0.0;
+			};
+		};
+/* End XCRemoteSwiftPackageReference section */
+
+/* Begin XCSwiftPackageProductDependency section */
+		171AFF3F29E547F700FBFC05 /* FirebaseAnalyticsSwift */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = 171AFF3E29E547F700FBFC05 /* XCRemoteSwiftPackageReference "firebase-ios-sdk" */;
+			productName = FirebaseAnalyticsSwift;
+		};
+		171AFF4129E547F700FBFC05 /* FirebaseAuth */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = 171AFF3E29E547F700FBFC05 /* XCRemoteSwiftPackageReference "firebase-ios-sdk" */;
+			productName = FirebaseAuth;
+		};
+		171AFF4329E547F700FBFC05 /* FirebaseCrashlytics */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = 171AFF3E29E547F700FBFC05 /* XCRemoteSwiftPackageReference "firebase-ios-sdk" */;
+			productName = FirebaseCrashlytics;
+		};
+		171AFF4529E547F700FBFC05 /* FirebaseDatabaseSwift */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = 171AFF3E29E547F700FBFC05 /* XCRemoteSwiftPackageReference "firebase-ios-sdk" */;
+			productName = FirebaseDatabaseSwift;
+		};
+/* End XCSwiftPackageProductDependency section */
 	};
 	rootObject = 171AFE8529E407FE00FBFC05 /* Project object */;
 }

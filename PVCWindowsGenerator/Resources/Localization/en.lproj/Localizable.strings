@@ -1,0 +1,15 @@
+/* 
+  Localizable.strings
+  PVCWindowsGenerator
+
+  Created by Alex Bofu on 11.04.2023.
+  
+*/
+
+
+//login
+"login_screen_title" = "Login";
+
+
+//signup
+"signup_screen_title" = "Sign Up";
