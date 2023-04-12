@@ -40,7 +40,7 @@ struct PVCWindowsGeneratorApp: App {
                 switch dependencyContainer.authService.currentUser {
                 case .none:
                     EmailCheckView(
-                        viewModel: .init(authService: dependencyContainer.authService)
+                        viewModel:  .init(authService: dependencyContainer.authService)
                     )
                 default:
                     EmptyView()
