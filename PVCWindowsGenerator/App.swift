@@ -7,25 +7,19 @@
 
 import SwiftUI
 import Firebase
+import Stinsen
 
 @main
 struct PVCWindowsGeneratorApp: App {
     
     @UIApplicationDelegateAdaptor(AppDelegate.self) var appDelegate
     
-    @State private var dependencyContainer: DependencyContainer
+    let dependencyContainer: DependencyContainer
     @State private var isLoadingMainData = true
-    
+        
     init() {
         FirebaseApp.configure()
-        
-        _dependencyContainer = .init(
-            initialValue: .init(
-                authService: .init(),
-                networkService: .init(),
-                storageService: .init()
-            )
-        )
+        dependencyContainer = .defaultContainer
     }
     
     var body: some Scene {
@@ -33,19 +27,33 @@ struct PVCWindowsGeneratorApp: App {
             switch isLoadingMainData {
             case true:
                 LaunchScreenView()
-                    .onReceive(dependencyContainer.authService.hasInitializedSessionSubject) { newValue in
-                        isLoadingMainData = !newValue
+                    .task {
+                        performInitialization()
                     }
             case false:
                 switch dependencyContainer.authService.currentUser {
                 case .none:
-                    EmailCheckView(
-                        viewModel: .init(authService: dependencyContainer.authService)
-                    )
+                    authFlow
                 default:
-                    EmptyView()
+                    mainFlow
                 }
             }
+        }
+    }
+    
+    private var authFlow: some View {
+        NavigationViewCoordinator(AuthCoordinator(dependencyContainer: dependencyContainer)).view()
+    }
+    
+    private var mainFlow: some View {
+        Color.red
+    }
+    
+    //MARK: - private
+    private func performInitialization() {
+        Task(priority: .userInitiated) {
+            await dependencyContainer.authService.checkAuthStatus()
+            isLoadingMainData = false
         }
     }
 }

@@ -9,8 +9,11 @@ import UIKit
 
 
 extension UIColor: UIKitStringRepresentableInitable {
+    static var light2B2B2B: UIColor { return .init(ColorName.light2B2B2B) }
     static var light438BF6: UIColor { return .init(ColorName.light438BF6) }
     static var light4BD894: UIColor { return .init(ColorName.light4BD894) }
     static var lightC34246: UIColor { return .init(ColorName.lightC34246) }
     static var lightEC8C34: UIColor { return .init(ColorName.lightEC8C34) }
+    static var lightF5EDEC: UIColor { return .init(ColorName.lightF5EDEC) }
+    static var lightFFFFFF: UIColor { return .init(ColorName.lightFFFFFF) }
 }

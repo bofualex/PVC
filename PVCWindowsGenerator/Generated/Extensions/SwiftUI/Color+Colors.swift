@@ -9,8 +9,11 @@ import SwiftUI
 
 
 extension Color: SwiftUIStringRepresentableInitable {
+    static var light2B2B2B: Color { return .init(ColorName.light2B2B2B) }
     static var light438BF6: Color { return .init(ColorName.light438BF6) }
     static var light4BD894: Color { return .init(ColorName.light4BD894) }
     static var lightC34246: Color { return .init(ColorName.lightC34246) }
     static var lightEC8C34: Color { return .init(ColorName.lightEC8C34) }
+    static var lightF5EDEC: Color { return .init(ColorName.lightF5EDEC) }
+    static var lightFFFFFF: Color { return .init(ColorName.lightFFFFFF) }
 }

@@ -66,7 +66,7 @@ struct LoadingView: View {
     // MARK: Animation methods
     func animateSpinner(
         with duration: Double,
-        completion: @escaping (() -> Void)
+        completion: @escaping VoidCallback
     ) {
         Timer.scheduledTimer(
             withTimeInterval: duration,

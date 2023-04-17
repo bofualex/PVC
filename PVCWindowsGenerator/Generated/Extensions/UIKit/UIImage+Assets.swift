@@ -9,5 +9,7 @@ import UIKit
 
 
 extension UIImage: UIKitStringRepresentableInitable {
-
+    /// General
+    static var generalArrowLeft: UIImage { return .init(AssetName.General.arrowLeft) }
+    static var generalClose: UIImage { return .init(AssetName.General.close) }
 }

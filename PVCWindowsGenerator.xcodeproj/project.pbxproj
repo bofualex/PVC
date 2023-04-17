@@ -66,6 +66,25 @@
 		17D0C5E029E591D400E6CE0A /* EmailCheckViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 17D0C5DF29E591D400E6CE0A /* EmailCheckViewModel.swift */; };
 		17D0C5E529E599B300E6CE0A /* LaunchScreenView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 17D0C5E429E599B300E6CE0A /* LaunchScreenView.swift */; };
 		17D0C5E829E684AB00E6CE0A /* LoadingView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 17D0C5E729E684AB00E6CE0A /* LoadingView.swift */; };
+		17D0C61129E82C8D00E6CE0A /* ButtonStyles.swift in Sources */ = {isa = PBXBuildFile; fileRef = 17D0C61029E82C8D00E6CE0A /* ButtonStyles.swift */; };
+		17D0C61329E82CE100E6CE0A /* View+Extensions.swift in Sources */ = {isa = PBXBuildFile; fileRef = 17D0C61229E82CE100E6CE0A /* View+Extensions.swift */; };
+		17D0C61529E82D0500E6CE0A /* Shape+Utils.swift in Sources */ = {isa = PBXBuildFile; fileRef = 17D0C61429E82D0500E6CE0A /* Shape+Utils.swift */; };
+		17D0C61729E82E0100E6CE0A /* UIKit+Utils.swift in Sources */ = {isa = PBXBuildFile; fileRef = 17D0C61629E82E0100E6CE0A /* UIKit+Utils.swift */; };
+		17D0C61929E82ED300E6CE0A /* Publishers+Extensions.swift in Sources */ = {isa = PBXBuildFile; fileRef = 17D0C61829E82ED300E6CE0A /* Publishers+Extensions.swift */; };
+		17D0C61B29E82F9F00E6CE0A /* Buttons.swift in Sources */ = {isa = PBXBuildFile; fileRef = 17D0C61A29E82F9F00E6CE0A /* Buttons.swift */; };
+		17D0C61D29E82FAE00E6CE0A /* BorderedButton.swift in Sources */ = {isa = PBXBuildFile; fileRef = 17D0C61C29E82FAE00E6CE0A /* BorderedButton.swift */; };
+		17D0C62029E8302000E6CE0A /* ActivityIndicator.swift in Sources */ = {isa = PBXBuildFile; fileRef = 17D0C61F29E8302000E6CE0A /* ActivityIndicator.swift */; };
+		17D0C62229E8306F00E6CE0A /* FilledButton.swift in Sources */ = {isa = PBXBuildFile; fileRef = 17D0C62129E8306F00E6CE0A /* FilledButton.swift */; };
+		17D0C62429E8310600E6CE0A /* TextButton.swift in Sources */ = {isa = PBXBuildFile; fileRef = 17D0C62329E8310600E6CE0A /* TextButton.swift */; };
+		17D0C62629E8318800E6CE0A /* VerticalImageTextButton.swift in Sources */ = {isa = PBXBuildFile; fileRef = 17D0C62529E8318800E6CE0A /* VerticalImageTextButton.swift */; };
+		17D0C62829E892C700E6CE0A /* Image+Modifiers.swift in Sources */ = {isa = PBXBuildFile; fileRef = 17D0C62729E892C700E6CE0A /* Image+Modifiers.swift */; };
+		17D0C62A29E892F000E6CE0A /* BackButton.swift in Sources */ = {isa = PBXBuildFile; fileRef = 17D0C62929E892F000E6CE0A /* BackButton.swift */; };
+		17D0C62D29E8960000E6CE0A /* NavigationBar.swift in Sources */ = {isa = PBXBuildFile; fileRef = 17D0C62C29E8960000E6CE0A /* NavigationBar.swift */; };
+		17D0C62F29EA63C800E6CE0A /* NavigationBar+Extensions.swift in Sources */ = {isa = PBXBuildFile; fileRef = 17D0C62E29EA63C800E6CE0A /* NavigationBar+Extensions.swift */; };
+		17D0C63929EAC0B800E6CE0A /* AuthCoordinator.swift in Sources */ = {isa = PBXBuildFile; fileRef = 17D0C63829EAC0B800E6CE0A /* AuthCoordinator.swift */; };
+		17D0C63E29EB38CF00E6CE0A /* Stinsen in Frameworks */ = {isa = PBXBuildFile; productRef = 17D0C63D29EB38CF00E6CE0A /* Stinsen */; };
+		17D0C64029EDD74300E6CE0A /* AuthCoordinator+Factory.swift in Sources */ = {isa = PBXBuildFile; fileRef = 17D0C63F29EDD74300E6CE0A /* AuthCoordinator+Factory.swift */; };
+		17D0C64229EDDD9000E6CE0A /* Environment+Custom.swift in Sources */ = {isa = PBXBuildFile; fileRef = 17D0C64129EDDD9000E6CE0A /* Environment+Custom.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -145,6 +164,24 @@
 		17D0C5E429E599B300E6CE0A /* LaunchScreenView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LaunchScreenView.swift; sourceTree = "<group>"; };
 		17D0C5E729E684AB00E6CE0A /* LoadingView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LoadingView.swift; sourceTree = "<group>"; };
 		17D0C5EB29E68B2E00E6CE0A /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		17D0C61029E82C8D00E6CE0A /* ButtonStyles.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ButtonStyles.swift; sourceTree = "<group>"; };
+		17D0C61229E82CE100E6CE0A /* View+Extensions.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "View+Extensions.swift"; sourceTree = "<group>"; };
+		17D0C61429E82D0500E6CE0A /* Shape+Utils.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "Shape+Utils.swift"; sourceTree = "<group>"; };
+		17D0C61629E82E0100E6CE0A /* UIKit+Utils.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "UIKit+Utils.swift"; sourceTree = "<group>"; };
+		17D0C61829E82ED300E6CE0A /* Publishers+Extensions.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "Publishers+Extensions.swift"; sourceTree = "<group>"; };
+		17D0C61A29E82F9F00E6CE0A /* Buttons.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Buttons.swift; sourceTree = "<group>"; };
+		17D0C61C29E82FAE00E6CE0A /* BorderedButton.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BorderedButton.swift; sourceTree = "<group>"; };
+		17D0C61F29E8302000E6CE0A /* ActivityIndicator.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ActivityIndicator.swift; sourceTree = "<group>"; };
+		17D0C62129E8306F00E6CE0A /* FilledButton.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FilledButton.swift; sourceTree = "<group>"; };
+		17D0C62329E8310600E6CE0A /* TextButton.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TextButton.swift; sourceTree = "<group>"; };
+		17D0C62529E8318800E6CE0A /* VerticalImageTextButton.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = VerticalImageTextButton.swift; sourceTree = "<group>"; };
+		17D0C62729E892C700E6CE0A /* Image+Modifiers.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "Image+Modifiers.swift"; sourceTree = "<group>"; };
+		17D0C62929E892F000E6CE0A /* BackButton.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BackButton.swift; sourceTree = "<group>"; };
+		17D0C62C29E8960000E6CE0A /* NavigationBar.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NavigationBar.swift; sourceTree = "<group>"; };
+		17D0C62E29EA63C800E6CE0A /* NavigationBar+Extensions.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "NavigationBar+Extensions.swift"; sourceTree = "<group>"; };
+		17D0C63829EAC0B800E6CE0A /* AuthCoordinator.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AuthCoordinator.swift; sourceTree = "<group>"; };
+		17D0C63F29EDD74300E6CE0A /* AuthCoordinator+Factory.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "AuthCoordinator+Factory.swift"; sourceTree = "<group>"; };
+		17D0C64129EDDD9000E6CE0A /* Environment+Custom.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "Environment+Custom.swift"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -156,6 +193,7 @@
 				171AFF4429E547F700FBFC05 /* FirebaseCrashlytics in Frameworks */,
 				171AFF4029E547F700FBFC05 /* FirebaseAnalyticsSwift in Frameworks */,
 				171AFF4229E547F700FBFC05 /* FirebaseAuth in Frameworks */,
+				17D0C63E29EB38CF00E6CE0A /* Stinsen in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -252,7 +290,10 @@
 		171AFEBB29E4082C00FBFC05 /* Reusables */ = {
 			isa = PBXGroup;
 			children = (
+				17D0C62B29E894AA00E6CE0A /* NavigationBar */,
+				17D0C61E29E8301000E6CE0A /* ActivityIndicator */,
 				17D0C5E629E6849700E6CE0A /* Loading View */,
+				17D0C60F29E82C6D00E6CE0A /* Buttons */,
 			);
 			path = Reusables;
 			sourceTree = "<group>";
@@ -280,6 +321,12 @@
 			isa = PBXGroup;
 			children = (
 				171AFEC229E5310200FBFC05 /* projecthelper.swift */,
+				17D0C61229E82CE100E6CE0A /* View+Extensions.swift */,
+				17D0C61429E82D0500E6CE0A /* Shape+Utils.swift */,
+				17D0C61629E82E0100E6CE0A /* UIKit+Utils.swift */,
+				17D0C61829E82ED300E6CE0A /* Publishers+Extensions.swift */,
+				17D0C62729E892C700E6CE0A /* Image+Modifiers.swift */,
+				17D0C64129EDDD9000E6CE0A /* Environment+Custom.swift */,
 			);
 			path = Utils;
 			sourceTree = "<group>";
@@ -287,6 +334,8 @@
 		171AFEBF29E530A700FBFC05 /* Auth */ = {
 			isa = PBXGroup;
 			children = (
+				17D0C63829EAC0B800E6CE0A /* AuthCoordinator.swift */,
+				17D0C63F29EDD74300E6CE0A /* AuthCoordinator+Factory.swift */,
 				17D0C5DC29E591B300E6CE0A /* Email Check */,
 				171AFEC129E530BA00FBFC05 /* Signup */,
 				171AFEC029E530B200FBFC05 /* Login */,
@@ -521,6 +570,37 @@
 			path = "Loading View";
 			sourceTree = "<group>";
 		};
+		17D0C60F29E82C6D00E6CE0A /* Buttons */ = {
+			isa = PBXGroup;
+			children = (
+				17D0C61029E82C8D00E6CE0A /* ButtonStyles.swift */,
+				17D0C61A29E82F9F00E6CE0A /* Buttons.swift */,
+				17D0C61C29E82FAE00E6CE0A /* BorderedButton.swift */,
+				17D0C62129E8306F00E6CE0A /* FilledButton.swift */,
+				17D0C62329E8310600E6CE0A /* TextButton.swift */,
+				17D0C62529E8318800E6CE0A /* VerticalImageTextButton.swift */,
+				17D0C62929E892F000E6CE0A /* BackButton.swift */,
+			);
+			path = Buttons;
+			sourceTree = "<group>";
+		};
+		17D0C61E29E8301000E6CE0A /* ActivityIndicator */ = {
+			isa = PBXGroup;
+			children = (
+				17D0C61F29E8302000E6CE0A /* ActivityIndicator.swift */,
+			);
+			path = ActivityIndicator;
+			sourceTree = "<group>";
+		};
+		17D0C62B29E894AA00E6CE0A /* NavigationBar */ = {
+			isa = PBXGroup;
+			children = (
+				17D0C62C29E8960000E6CE0A /* NavigationBar.swift */,
+				17D0C62E29EA63C800E6CE0A /* NavigationBar+Extensions.swift */,
+			);
+			path = NavigationBar;
+			sourceTree = "<group>";
+		};
 /* End PBXGroup section */
 
 /* Begin PBXNativeTarget section */
@@ -542,6 +622,7 @@
 				171AFF4129E547F700FBFC05 /* FirebaseAuth */,
 				171AFF4329E547F700FBFC05 /* FirebaseCrashlytics */,
 				171AFF4529E547F700FBFC05 /* FirebaseDatabaseSwift */,
+				17D0C63D29EB38CF00E6CE0A /* Stinsen */,
 			);
 			productName = PVCWindowsGenerator;
 			productReference = 171AFE8D29E407FE00FBFC05 /* PVCWindowsGenerator.app */;
@@ -616,6 +697,7 @@
 			mainGroup = 171AFE8429E407FE00FBFC05;
 			packageReferences = (
 				171AFF3E29E547F700FBFC05 /* XCRemoteSwiftPackageReference "firebase-ios-sdk" */,
+				17D0C63C29EB38CF00E6CE0A /* XCRemoteSwiftPackageReference "stinsen" */,
 			);
 			productRefGroup = 171AFE8E29E407FE00FBFC05 /* Products */;
 			projectDirPath = "";
@@ -675,29 +757,46 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				17D0C62429E8310600E6CE0A /* TextButton.swift in Sources */,
 				171AFEFC29E5394400FBFC05 /* UIKitStringRepresentableInitable.swift in Sources */,
+				17D0C61529E82D0500E6CE0A /* Shape+Utils.swift in Sources */,
 				17D0C5E029E591D400E6CE0A /* EmailCheckViewModel.swift in Sources */,
 				171AFF0929E5394400FBFC05 /* UIColor+Colors.swift in Sources */,
+				17D0C62029E8302000E6CE0A /* ActivityIndicator.swift in Sources */,
+				17D0C61D29E82FAE00E6CE0A /* BorderedButton.swift in Sources */,
+				17D0C61729E82E0100E6CE0A /* UIKit+Utils.swift in Sources */,
 				171AFF0729E5394400FBFC05 /* UIKit+UIFont-Vars.swift in Sources */,
 				171AFF0829E5394400FBFC05 /* UIImage+Assets.swift in Sources */,
 				17D0C5DB29E5774200E6CE0A /* User.swift in Sources */,
+				17D0C61929E82ED300E6CE0A /* Publishers+Extensions.swift in Sources */,
+				17D0C62829E892C700E6CE0A /* Image+Modifiers.swift in Sources */,
+				17D0C64029EDD74300E6CE0A /* AuthCoordinator+Factory.swift in Sources */,
 				17D0C5D629E5752D00E6CE0A /* AppDelegate.swift in Sources */,
 				171AFF0129E5394400FBFC05 /* FontSize.swift in Sources */,
 				171AFF0A29E5394400FBFC05 /* String+LocalizableStringKeys.swift in Sources */,
 				171AFF3429E5450800FBFC05 /* DependencyContainer.swift in Sources */,
+				17D0C62229E8306F00E6CE0A /* FilledButton.swift in Sources */,
+				17D0C61329E82CE100E6CE0A /* View+Extensions.swift in Sources */,
 				171AFF2F29E544BF00FBFC05 /* LoginView.swift in Sources */,
+				17D0C61B29E82F9F00E6CE0A /* Buttons.swift in Sources */,
 				17D0C5D929E575CA00E6CE0A /* AuthenticationService.swift in Sources */,
+				17D0C62A29E892F000E6CE0A /* BackButton.swift in Sources */,
 				171AFEFF29E5394400FBFC05 /* SwiftUIStringRepresentableInitable.swift in Sources */,
 				171AFF0D29E5394400FBFC05 /* Color+Colors.swift in Sources */,
+				17D0C64229EDDD9000E6CE0A /* Environment+Custom.swift in Sources */,
 				171AFEC329E5310200FBFC05 /* projecthelper.swift in Sources */,
 				171AFEFB29E5394400FBFC05 /* UIKitStringBundleInitable.swift in Sources */,
 				171AFF0E29E5394400FBFC05 /* Image+Assets.swift in Sources */,
 				17D0C5DE29E591CA00E6CE0A /* EmailCheckView.swift in Sources */,
+				17D0C61129E82C8D00E6CE0A /* ButtonStyles.swift in Sources */,
 				171AFF3929E5456500FBFC05 /* StorageService.swift in Sources */,
+				17D0C63929EAC0B800E6CE0A /* AuthCoordinator.swift in Sources */,
 				171AFF3729E5454000FBFC05 /* NetworkService.swift in Sources */,
 				171AFF0229E5394400FBFC05 /* LocalizableStringKeys.swift in Sources */,
 				171AFF3129E544CA00FBFC05 /* LoginViewModel.swift in Sources */,
 				171AFF0529E5394400FBFC05 /* ColorName.swift in Sources */,
+				17D0C62D29E8960000E6CE0A /* NavigationBar.swift in Sources */,
+				17D0C62629E8318800E6CE0A /* VerticalImageTextButton.swift in Sources */,
 				171AFF0629E5394400FBFC05 /* UIKit+UIFont-Functions.swift in Sources */,
 				171AFF0429E5394400FBFC05 /* FontType.swift in Sources */,
 				171AFEFD29E5394400FBFC05 /* LocalizableStringKey.swift in Sources */,
@@ -707,6 +806,7 @@
 				171AFE9129E407FE00FBFC05 /* App.swift in Sources */,
 				171AFF0C29E5394400FBFC05 /* SwiftUI+Font-Vars.swift in Sources */,
 				171AFF0B29E5394400FBFC05 /* SwiftUI+Font-Functions.swift in Sources */,
+				17D0C62F29EA63C800E6CE0A /* NavigationBar+Extensions.swift in Sources */,
 				17D0C5E829E684AB00E6CE0A /* LoadingView.swift in Sources */,
 				171AFF0029E5394400FBFC05 /* SwiftUIStringBundleInitable.swift in Sources */,
 			);
@@ -1060,6 +1160,14 @@
 				minimumVersion = 10.0.0;
 			};
 		};
+		17D0C63C29EB38CF00E6CE0A /* XCRemoteSwiftPackageReference "stinsen" */ = {
+			isa = XCRemoteSwiftPackageReference;
+			repositoryURL = "https://github.com/rundfunk47/stinsen";
+			requirement = {
+				kind = upToNextMajorVersion;
+				minimumVersion = 2.0.0;
+			};
+		};
 /* End XCRemoteSwiftPackageReference section */
 
 /* Begin XCSwiftPackageProductDependency section */
@@ -1082,6 +1190,11 @@
 			isa = XCSwiftPackageProductDependency;
 			package = 171AFF3E29E547F700FBFC05 /* XCRemoteSwiftPackageReference "firebase-ios-sdk" */;
 			productName = FirebaseDatabaseSwift;
+		};
+		17D0C63D29EB38CF00E6CE0A /* Stinsen */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = 17D0C63C29EB38CF00E6CE0A /* XCRemoteSwiftPackageReference "stinsen" */;
+			productName = Stinsen;
 		};
 /* End XCSwiftPackageProductDependency section */
 	};

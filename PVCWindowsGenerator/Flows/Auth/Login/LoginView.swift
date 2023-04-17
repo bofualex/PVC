@@ -9,10 +9,19 @@ import SwiftUI
 
 struct LoginView: View {
     
+    @EnvironmentObject private var router: AuthCoordinator.Router
     @ObservedObject var viewModel: LoginViewModel
     
     var body: some View {
-        Text(/*@START_MENU_TOKEN@*/"Hello, World!"/*@END_MENU_TOKEN@*/)
+        NavigationBar(
+            barType: .title(title: "Login"),
+            contentView: {
+                Text("login")
+            },
+            leftButtonAction: {
+                router.pop()
+            }
+        )
     }
 }
 

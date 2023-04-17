@@ -22,12 +22,9 @@ class AuthenticationService: AuthenticationServiceProtocol {
     
     var currentUser: User?
     var currentUserSubject = PassthroughSubject<User?, Never>()
-    var hasInitializedSessionSubject = PassthroughSubject<Bool, Never>()
     
     //MARK: - init
-    init() {
-        checkAuthStatus()
-    }
+    init() {}
     
     //MARK: - public
     func checkEmailIsRegistered(_ email: String) async throws -> Bool {
@@ -50,20 +47,20 @@ class AuthenticationService: AuthenticationServiceProtocol {
         return user
     }
     
-    //MARK: - private
-    private func checkAuthStatus() {
-        Auth.auth().addStateDidChangeListener { [weak self] (auth, _) in
-            guard let firebaseUser = auth.currentUser else {
-                self?.currentUserSubject.send(nil)
-                self?.hasInitializedSessionSubject.send(true)
-                return
+    func checkAuthStatus() async {
+        await withCheckedContinuation { continuation in
+            Auth.auth().addStateDidChangeListener { [weak self] (auth, _) in
+                if let firebaseUser = auth.currentUser {
+                    self?.currentUser = try? User(from: firebaseUser)
+                }
+                
+                continuation.resume()
             }
-            
-            self?.currentUser = try? User(from: firebaseUser)
-            self?.currentUserSubject.send(self?.currentUser)
-            self?.hasInitializedSessionSubject.send(true)
         }
     }
+    
+    //MARK: - private
+    
 }
 
 class AuthenticationServiceMock: AuthenticationServiceProtocol {

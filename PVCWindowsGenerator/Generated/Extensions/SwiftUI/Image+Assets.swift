@@ -9,5 +9,7 @@ import SwiftUI
 
 
 extension Image: SwiftUIStringRepresentableInitable {
-
+    /// General
+    static var generalArrowLeft: Image { return .init(AssetName.General.arrowLeft) }
+    static var generalClose: Image { return .init(AssetName.General.close) }
 }

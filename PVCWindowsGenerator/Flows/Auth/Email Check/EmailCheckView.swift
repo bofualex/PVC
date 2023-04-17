@@ -9,10 +9,19 @@ import SwiftUI
 
 struct EmailCheckView: View {
     
+    @EnvironmentObject private var router: AuthCoordinator.Router
     @ObservedObject var viewModel: EmailCheckViewModel
 
     var body: some View {
-        Text(/*@START_MENU_TOKEN@*/"Hello, World!"/*@END_MENU_TOKEN@*/)
+        NavigationBar(
+            barType: .title(title: "Intră sau Creează Cont"),
+            isBackButtonHidden: true,
+            contentView: {
+                Button("test nav") {
+                    router.route(to: \.loginView)
+                }
+            }
+        )
     }
 }
 

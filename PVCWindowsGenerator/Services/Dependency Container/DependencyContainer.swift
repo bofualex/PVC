@@ -34,6 +34,14 @@ class DependencyContainer: DependencyContainerProtocol {
     }
 }
 
+extension DependencyContainer {
+    static let defaultContainer = DependencyContainer(
+        authService: .init(),
+        networkService: .init(),
+        storageService: .init()
+    )
+}
+
 class DependencyContainerMock: DependencyContainerProtocol {
     
     let authService: AuthenticationServiceMock

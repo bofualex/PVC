@@ -9,5 +9,8 @@ import Foundation
 
 
 enum AssetName {
-
+    enum General: String {
+        case arrowLeft = "arrowLeft"
+        case close = "close"
+    }
 }
