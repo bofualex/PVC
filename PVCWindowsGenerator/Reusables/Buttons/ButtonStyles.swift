@@ -72,7 +72,7 @@ struct ButtonStyles {
         let isEnabled: Bool
         let fillColor: Color
         let size: ButtonSize
-        var font: Font = .rubikSemiBold14
+        var font: Font = .rubikBold16
         var foregroundColor: Color = .lightFFFFFF
         
         func makeBody(configuration: Configuration) -> some View {
@@ -88,7 +88,7 @@ struct ButtonStyles {
                     RoundedRectangle(cornerRadius: 15)
                         .fill(fillColor)
                 )
-                .opacity(configuration.isPressed || !isEnabled ? 0.5 : 1)
+                .opacity(configuration.isPressed ? 0.5 : 1)
         }
     }
 
@@ -133,10 +133,3 @@ struct ButtonStyles {
         }
     }
 }
-
-struct Previews_ButtonStyles_Previews: PreviewProvider {
-    static var previews: some View {
-        /*@START_MENU_TOKEN@*/Text("Hello, World!")/*@END_MENU_TOKEN@*/
-    }
-}
-

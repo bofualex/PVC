@@ -9,6 +9,25 @@ import Foundation
 
 
 enum LocalizableStringKeys {
+    enum General: String, LocalizableStringKey {
+        case email = "email"
+        case password = "password"
+        case reEnterPassword = "re_enter_password"
+        case continu = "continu"
+        case login = "login"
+        case signup = "signup"
+    }
+
+    enum Error: String, LocalizableStringKey {
+        case invalidEmail = "invalid_email"
+        case invalidPassword = "invalid_password"
+        case passwordsDontMatch = "passwords_dont_match"
+    }
+
+    enum EmailCheck: String, LocalizableStringKey {
+        case screenTitle = "email_check_screen_title"
+    }
+
     enum Login: String, LocalizableStringKey {
         case screenTitle = "login_screen_title"
     }

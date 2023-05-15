@@ -6,10 +6,25 @@
   
 */
 
+//MARK: - general
+"email" = "email";
+"password" = "password";
+"re_enter_password" = "re-enter password";
+"continu" = "continue";
+"login" = "login";
+"signup" = "sign up";
 
-//login
+//MARK: - error
+"invalid_email" = "Please enter a valid email";
+"invalid_password" = "Your password must be at least 8 characters long and it must contain an uppercase letter, a digit and a special character (!@#$&*)";
+"passwords_dont_match" = "Passwords don't match";
+
+//MARK: - email check
+"email_check_screen_title" = "Intră sau Creează Cont";
+
+//MARK: - login
 "login_screen_title" = "Login";
 
 
-//signup
+//MARK: - signup
 "signup_screen_title" = "Sign Up";

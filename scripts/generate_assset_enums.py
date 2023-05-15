@@ -170,7 +170,7 @@ def generate_strigs(p: str) -> None:
 
     enum_name = 'LocalizableStringKeys'
 
-    cat_blocks = [cb.strip() for cb in s.replace('"', '').split('//')[1::]]
+    cat_blocks = [cb.strip() for cb in s.replace('"', '').split('//MARK: - ')[1::]]
     sub_enums = []
     static_vars = []
     

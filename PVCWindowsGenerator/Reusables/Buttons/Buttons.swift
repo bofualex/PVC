@@ -17,7 +17,8 @@ struct Buttons_Previews: PreviewProvider {
                 Buttons.BackButton(action: {})
                 
                 Buttons.FilledButton(
-                    title: "Save"
+                    title: "Save",
+                    action: nil
                 )
                 Buttons.BorderedButton(
                     title: "Save all"
@@ -26,7 +27,8 @@ struct Buttons_Previews: PreviewProvider {
             HStack {
                 Buttons.FilledButton(
                     title: "Save",
-                    isEnabled: false
+                    isEnabled: false,
+                    action: nil
                 )
                 Buttons.BorderedButton(
                     title: "Save",
@@ -36,7 +38,8 @@ struct Buttons_Previews: PreviewProvider {
             HStack {
                 Buttons.FilledButton(
                     title: "Show",
-                    isLoading: true
+                    isLoading: true,
+                    action: nil
                 )
                 Buttons.BorderedButton(
                     title: "Show",

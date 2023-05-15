@@ -16,7 +16,7 @@ extension Buttons {
         var font: Font = .rubikSemiBold14
         var accentColor: Color = .lightFFFFFF
         var size: ButtonSize = .medium
-        var action: VoidCallback? = nil
+        let action: VoidCallback?
         
         @ViewBuilder var supplementaryView: SupplementaryView
         
@@ -34,15 +34,30 @@ extension Buttons {
                     supplementaryView
                 }
             }
-            .buttonStyle(ButtonStyles.Filled(isEnabled: _isEnabled, fillColor: fillColor, size: size, font: font, foregroundColor: accentColor))
+            .buttonStyle(
+                ButtonStyles.Filled(
+                    isEnabled: _isEnabled,
+                    fillColor: fillColor,
+                    size: size,
+                    font: font,
+                    foregroundColor: accentColor
+                )
+            )
             .disabled(!_isEnabled)
-            .overlay(loadingIndicator, alignment: .trailing)
+            .overlay(
+                loadingIndicator
+                    .padding(.trailing, 6)
+                , alignment: .trailing
+            )
         }
         
         @ViewBuilder
         private var loadingIndicator: some View {
             if isLoading {
-                ActivityIndicator(scale: 0.8)
+                ActivityIndicator(
+                    tint: accentColor,
+                    scale: 0.8
+                )
                     .padding(.trailing, 6)
                     .transition(.opacity.animation(.linear))
             }
@@ -56,10 +71,10 @@ extension Buttons.FilledButton where SupplementaryView == EmptyView {
         isEnabled: Bool = true,
         isLoading: Bool = false,
         fillColor: Color = .lightC34246,
-        font: Font = .rubikSemiBold14,
+        font: Font = .rubikBold16,
         accentColor: Color = .lightFFFFFF,
         size: ButtonSize = .medium,
-        action: VoidCallback? = nil
+        action: VoidCallback?
     ) {
         self.title = title
         self.isEnabled = isEnabled

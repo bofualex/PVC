@@ -12,5 +12,8 @@ enum AssetName {
     enum General: String {
         case arrowLeft = "arrowLeft"
         case close = "close"
+        case eyeClosed = "eyeClosed"
+        case eyeOpen = "eyeOpen"
+        case logo = "logo"
     }
 }

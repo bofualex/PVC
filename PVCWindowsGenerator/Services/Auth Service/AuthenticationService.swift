@@ -13,6 +13,7 @@ protocol AuthenticationServiceProtocol {
     
     var currentUser: User? {get set}
     
+    func checkAuthStatus() async
     func checkEmailIsRegistered(_ email: String) async throws -> Bool
     func createUser(with email: String, password: String) async throws -> User
     func signIn(with email: String, password: String) async throws -> User
@@ -28,7 +29,7 @@ class AuthenticationService: AuthenticationServiceProtocol {
     
     //MARK: - public
     func checkEmailIsRegistered(_ email: String) async throws -> Bool {
-        try await Auth.auth().fetchSignInMethods(forEmail: email).isEmpty
+        try await !Auth.auth().fetchSignInMethods(forEmail: email).isEmpty
     }
     
     func createUser(with email: String, password: String) async throws -> User {
@@ -66,18 +67,28 @@ class AuthenticationService: AuthenticationServiceProtocol {
 class AuthenticationServiceMock: AuthenticationServiceProtocol {
     
     var currentUser: User?
+    
+    func checkAuthStatus() async {
+        try? await Task.sleep(for: .seconds(5))
+    }
 
     func checkEmailIsRegistered(_ email: String) async throws -> Bool {
+        try await Task.sleep(for: .seconds(5))
+    
         return false
     }
     
     func createUser(with email: String, password: String) async throws -> User {
+        try await Task.sleep(for: .seconds(5))
+
         self.currentUser = .mocked
         
         return .mocked
     }
     
     func signIn(with email: String, password: String) async throws -> User {
+        try await Task.sleep(for: .seconds(5))
+
         self.currentUser = .mocked
 
         return .mocked

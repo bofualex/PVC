@@ -22,6 +22,21 @@ extension UIApplication {
             .safeAreaInsets
     }
     
+    func safeAreaInset(edge: Edge.Set) -> CGFloat? {
+        let insetValue: CGFloat?
+        
+        switch edge {
+        case .leading: insetValue = safeAreaInsets?.left
+        case .trailing: insetValue = safeAreaInsets?.right
+        case .top: insetValue = safeAreaInsets?.top
+        case .bottom: insetValue = safeAreaInsets?.bottom
+        default:
+            insetValue = CGFloat.zero
+        }
+        
+        return insetValue
+    }
+    
     func tryOpen(url: URL?) {
         guard let url, canOpenURL(url) else {
             return

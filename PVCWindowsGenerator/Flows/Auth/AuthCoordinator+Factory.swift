@@ -17,9 +17,25 @@ extension AuthCoordinator {
     }
     
     @ViewBuilder
+    func makeSignupView() -> some View {
+        SignupView(
+            viewModel: SignupViewModel(
+                authService: dependencyContainer.authService,
+                email: email
+            )
+        )
+    }
+    
+    @ViewBuilder
     func makeStart() -> some View {
         EmailCheckView(
-            viewModel: EmailCheckViewModel(authService: dependencyContainer.authService)
+            viewModel: EmailCheckViewModel(
+                authService: dependencyContainer.authService,
+                email: .init(
+                    get: { self.email },
+                    set: { newValue in self.email = newValue }
+                )
+            )
         )
     }
 }

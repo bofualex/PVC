@@ -19,7 +19,7 @@ struct PVCWindowsGeneratorApp: App {
         
     init() {
         FirebaseApp.configure()
-        dependencyContainer = .defaultContainer
+        dependencyContainer = .default
     }
     
     var body: some Scene {
@@ -42,7 +42,9 @@ struct PVCWindowsGeneratorApp: App {
     }
     
     private var authFlow: some View {
-        NavigationViewCoordinator(AuthCoordinator(dependencyContainer: dependencyContainer)).view()
+        NavigationViewCoordinator(
+            AuthCoordinator(dependencyContainer: dependencyContainer)
+        ).view()
     }
     
     private var mainFlow: some View {

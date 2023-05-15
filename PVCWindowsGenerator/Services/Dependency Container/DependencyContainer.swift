@@ -8,20 +8,16 @@
 import Foundation
 
 protocol DependencyContainerProtocol {
-    associatedtype AuthService = AuthenticationServiceProtocol
-    associatedtype NetworkService = NetworkServiceProtocol
-    associatedtype StorageService = StorageServiceProtocol
-
-    var authService: AuthService { get }
-    var networkService: NetworkService { get }
-    var storageService: StorageService { get }
+    var authService: any AuthenticationServiceProtocol { get }
+    var networkService: any NetworkServiceProtocol { get }
+    var storageService: any StorageServiceProtocol { get }
 }
 
 class DependencyContainer: DependencyContainerProtocol {
     
-    let authService: AuthenticationService
-    let networkService: NetworkService
-    let storageService: StorageService
+    let authService: AuthenticationServiceProtocol
+    let networkService: NetworkServiceProtocol
+    let storageService: StorageServiceProtocol
     
     init(
         authService: AuthenticationService,
@@ -35,7 +31,7 @@ class DependencyContainer: DependencyContainerProtocol {
 }
 
 extension DependencyContainer {
-    static let defaultContainer = DependencyContainer(
+    static let `default` = DependencyContainer(
         authService: .init(),
         networkService: .init(),
         storageService: .init()
@@ -44,9 +40,9 @@ extension DependencyContainer {
 
 class DependencyContainerMock: DependencyContainerProtocol {
     
-    let authService: AuthenticationServiceMock
-    let networkService: NetworkServiceMock
-    let storageService: StorageServiceMock
+    let authService: AuthenticationServiceProtocol
+    let networkService: NetworkServiceProtocol
+    let storageService: StorageServiceProtocol
     
     init(
         authService: AuthenticationServiceMock,
@@ -57,4 +53,10 @@ class DependencyContainerMock: DependencyContainerProtocol {
         self.networkService = networkService
         self.storageService = storageService
     }
+    
+    static let `default` = DependencyContainerMock(
+        authService: .init(),
+        networkService: .init(),
+        storageService: .init()
+    )
 }

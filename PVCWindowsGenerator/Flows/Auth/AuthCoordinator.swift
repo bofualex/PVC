@@ -10,13 +10,23 @@ import Stinsen
 
 final class AuthCoordinator: NavigationCoordinatable {
     
+    var email = ""
     let stack = NavigationStack(initial: \AuthCoordinator.start)
-    let dependencyContainer: DependencyContainer
+    let dependencyContainer: any DependencyContainerProtocol
     
     @Root var start = makeStart
     @Route(.push) var loginView = makeLoginView
-    
-    init(dependencyContainer: DependencyContainer) {
+    @Route(.push) var signupView = makeSignupView
+
+    init(dependencyContainer: any DependencyContainerProtocol) {
         self.dependencyContainer = dependencyContainer
     }
+}
+
+extension AuthCoordinator {
+    static let mocked = AuthCoordinator(dependencyContainer: DependencyContainerMock.default)
+    static let mockedRouter = NavigationRouter(
+        id: Int.random(in: .min ... .max),
+        coordinator: AuthCoordinator.mocked
+    )
 }

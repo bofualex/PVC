@@ -12,4 +12,7 @@ extension Image: SwiftUIStringRepresentableInitable {
     /// General
     static var generalArrowLeft: Image { return .init(AssetName.General.arrowLeft) }
     static var generalClose: Image { return .init(AssetName.General.close) }
+    static var generalEyeClosed: Image { return .init(AssetName.General.eyeClosed) }
+    static var generalEyeOpen: Image { return .init(AssetName.General.eyeOpen) }
+    static var generalLogo: Image { return .init(AssetName.General.logo) }
 }

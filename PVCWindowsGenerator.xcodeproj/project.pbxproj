@@ -59,6 +59,13 @@
 		171AFF4229E547F700FBFC05 /* FirebaseAuth in Frameworks */ = {isa = PBXBuildFile; productRef = 171AFF4129E547F700FBFC05 /* FirebaseAuth */; };
 		171AFF4429E547F700FBFC05 /* FirebaseCrashlytics in Frameworks */ = {isa = PBXBuildFile; productRef = 171AFF4329E547F700FBFC05 /* FirebaseCrashlytics */; };
 		171AFF4629E547F700FBFC05 /* FirebaseDatabaseSwift in Frameworks */ = {isa = PBXBuildFile; productRef = 171AFF4529E547F700FBFC05 /* FirebaseDatabaseSwift */; };
+		176C21242A00DF4300CF7216 /* PlaceholderTextfield.swift in Sources */ = {isa = PBXBuildFile; fileRef = 176C21232A00DF4300CF7216 /* PlaceholderTextfield.swift */; };
+		176C21262A02452400CF7216 /* String+Extensions.swift in Sources */ = {isa = PBXBuildFile; fileRef = 176C21252A02452400CF7216 /* String+Extensions.swift */; };
+		176C21292A0247B600CF7216 /* ToastDisplayView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 176C21282A0247B600CF7216 /* ToastDisplayView.swift */; };
+		176C212B2A02483A00CF7216 /* Transition+Extensions.swift in Sources */ = {isa = PBXBuildFile; fileRef = 176C212A2A02483A00CF7216 /* Transition+Extensions.swift */; };
+		176C212D2A02497200CF7216 /* LocalError.swift in Sources */ = {isa = PBXBuildFile; fileRef = 176C212C2A02497200CF7216 /* LocalError.swift */; };
+		176C21332A0381AE00CF7216 /* SignupView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 176C21322A0381AE00CF7216 /* SignupView.swift */; };
+		176C21352A0381C500CF7216 /* SignupViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 176C21342A0381C500CF7216 /* SignupViewModel.swift */; };
 		17D0C5D629E5752D00E6CE0A /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 17D0C5D529E5752D00E6CE0A /* AppDelegate.swift */; };
 		17D0C5D929E575CA00E6CE0A /* AuthenticationService.swift in Sources */ = {isa = PBXBuildFile; fileRef = 17D0C5D829E575CA00E6CE0A /* AuthenticationService.swift */; };
 		17D0C5DB29E5774200E6CE0A /* User.swift in Sources */ = {isa = PBXBuildFile; fileRef = 17D0C5DA29E5774200E6CE0A /* User.swift */; };
@@ -156,6 +163,13 @@
 		171AFF3629E5454000FBFC05 /* NetworkService.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NetworkService.swift; sourceTree = "<group>"; };
 		171AFF3829E5456500FBFC05 /* StorageService.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = StorageService.swift; sourceTree = "<group>"; };
 		171AFF3C29E546E700FBFC05 /* GoogleService-Info.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = "GoogleService-Info.plist"; sourceTree = "<group>"; };
+		176C21232A00DF4300CF7216 /* PlaceholderTextfield.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PlaceholderTextfield.swift; sourceTree = "<group>"; };
+		176C21252A02452400CF7216 /* String+Extensions.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "String+Extensions.swift"; sourceTree = "<group>"; };
+		176C21282A0247B600CF7216 /* ToastDisplayView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ToastDisplayView.swift; sourceTree = "<group>"; };
+		176C212A2A02483A00CF7216 /* Transition+Extensions.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "Transition+Extensions.swift"; sourceTree = "<group>"; };
+		176C212C2A02497200CF7216 /* LocalError.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LocalError.swift; sourceTree = "<group>"; };
+		176C21322A0381AE00CF7216 /* SignupView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SignupView.swift; sourceTree = "<group>"; };
+		176C21342A0381C500CF7216 /* SignupViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SignupViewModel.swift; sourceTree = "<group>"; };
 		17D0C5D529E5752D00E6CE0A /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		17D0C5D829E575CA00E6CE0A /* AuthenticationService.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AuthenticationService.swift; sourceTree = "<group>"; };
 		17D0C5DA29E5774200E6CE0A /* User.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = User.swift; sourceTree = "<group>"; };
@@ -241,6 +255,7 @@
 				171AFE9029E407FE00FBFC05 /* App.swift */,
 				171AFE9429E4080000FBFC05 /* Assets.xcassets */,
 				17D0C5EB29E68B2E00E6CE0A /* Info.plist */,
+				171AFF3C29E546E700FBFC05 /* GoogleService-Info.plist */,
 				171AFEBA29E4081F00FBFC05 /* Flows */,
 				171AFEBD29E408CE00FBFC05 /* Services */,
 				171AFEBC29E408A900FBFC05 /* Models */,
@@ -290,6 +305,8 @@
 		171AFEBB29E4082C00FBFC05 /* Reusables */ = {
 			isa = PBXGroup;
 			children = (
+				176C21272A0247A400CF7216 /* Toast */,
+				176C21222A00DF2800CF7216 /* PlaceholderTextfield */,
 				17D0C62B29E894AA00E6CE0A /* NavigationBar */,
 				17D0C61E29E8301000E6CE0A /* ActivityIndicator */,
 				17D0C5E629E6849700E6CE0A /* Loading View */,
@@ -302,6 +319,7 @@
 			isa = PBXGroup;
 			children = (
 				17D0C5DA29E5774200E6CE0A /* User.swift */,
+				176C212C2A02497200CF7216 /* LocalError.swift */,
 			);
 			path = Models;
 			sourceTree = "<group>";
@@ -327,6 +345,8 @@
 				17D0C61829E82ED300E6CE0A /* Publishers+Extensions.swift */,
 				17D0C62729E892C700E6CE0A /* Image+Modifiers.swift */,
 				17D0C64129EDDD9000E6CE0A /* Environment+Custom.swift */,
+				176C21252A02452400CF7216 /* String+Extensions.swift */,
+				176C212A2A02483A00CF7216 /* Transition+Extensions.swift */,
 			);
 			path = Utils;
 			sourceTree = "<group>";
@@ -355,6 +375,8 @@
 		171AFEC129E530BA00FBFC05 /* Signup */ = {
 			isa = PBXGroup;
 			children = (
+				176C21322A0381AE00CF7216 /* SignupView.swift */,
+				176C21342A0381C500CF7216 /* SignupViewModel.swift */,
 			);
 			path = Signup;
 			sourceTree = "<group>";
@@ -532,9 +554,24 @@
 		171AFF3B29E546D200FBFC05 /* Firebase */ = {
 			isa = PBXGroup;
 			children = (
-				171AFF3C29E546E700FBFC05 /* GoogleService-Info.plist */,
 			);
 			path = Firebase;
+			sourceTree = "<group>";
+		};
+		176C21222A00DF2800CF7216 /* PlaceholderTextfield */ = {
+			isa = PBXGroup;
+			children = (
+				176C21232A00DF4300CF7216 /* PlaceholderTextfield.swift */,
+			);
+			path = PlaceholderTextfield;
+			sourceTree = "<group>";
+		};
+		176C21272A0247A400CF7216 /* Toast */ = {
+			isa = PBXGroup;
+			children = (
+				176C21282A0247B600CF7216 /* ToastDisplayView.swift */,
+			);
+			path = Toast;
 			sourceTree = "<group>";
 		};
 		17D0C5D729E5758C00E6CE0A /* Auth Service */ = {
@@ -766,7 +803,10 @@
 				17D0C61D29E82FAE00E6CE0A /* BorderedButton.swift in Sources */,
 				17D0C61729E82E0100E6CE0A /* UIKit+Utils.swift in Sources */,
 				171AFF0729E5394400FBFC05 /* UIKit+UIFont-Vars.swift in Sources */,
+				176C21292A0247B600CF7216 /* ToastDisplayView.swift in Sources */,
 				171AFF0829E5394400FBFC05 /* UIImage+Assets.swift in Sources */,
+				176C212D2A02497200CF7216 /* LocalError.swift in Sources */,
+				176C21332A0381AE00CF7216 /* SignupView.swift in Sources */,
 				17D0C5DB29E5774200E6CE0A /* User.swift in Sources */,
 				17D0C61929E82ED300E6CE0A /* Publishers+Extensions.swift in Sources */,
 				17D0C62829E892C700E6CE0A /* Image+Modifiers.swift in Sources */,
@@ -776,6 +816,7 @@
 				171AFF0A29E5394400FBFC05 /* String+LocalizableStringKeys.swift in Sources */,
 				171AFF3429E5450800FBFC05 /* DependencyContainer.swift in Sources */,
 				17D0C62229E8306F00E6CE0A /* FilledButton.swift in Sources */,
+				176C21352A0381C500CF7216 /* SignupViewModel.swift in Sources */,
 				17D0C61329E82CE100E6CE0A /* View+Extensions.swift in Sources */,
 				171AFF2F29E544BF00FBFC05 /* LoginView.swift in Sources */,
 				17D0C61B29E82F9F00E6CE0A /* Buttons.swift in Sources */,
@@ -797,7 +838,9 @@
 				171AFF0529E5394400FBFC05 /* ColorName.swift in Sources */,
 				17D0C62D29E8960000E6CE0A /* NavigationBar.swift in Sources */,
 				17D0C62629E8318800E6CE0A /* VerticalImageTextButton.swift in Sources */,
+				176C21262A02452400CF7216 /* String+Extensions.swift in Sources */,
 				171AFF0629E5394400FBFC05 /* UIKit+UIFont-Functions.swift in Sources */,
+				176C21242A00DF4300CF7216 /* PlaceholderTextfield.swift in Sources */,
 				171AFF0429E5394400FBFC05 /* FontType.swift in Sources */,
 				171AFEFD29E5394400FBFC05 /* LocalizableStringKey.swift in Sources */,
 				171AFF0329E5394400FBFC05 /* AssetName.swift in Sources */,
@@ -806,6 +849,7 @@
 				171AFE9129E407FE00FBFC05 /* App.swift in Sources */,
 				171AFF0C29E5394400FBFC05 /* SwiftUI+Font-Vars.swift in Sources */,
 				171AFF0B29E5394400FBFC05 /* SwiftUI+Font-Functions.swift in Sources */,
+				176C212B2A02483A00CF7216 /* Transition+Extensions.swift in Sources */,
 				17D0C62F29EA63C800E6CE0A /* NavigationBar+Extensions.swift in Sources */,
 				17D0C5E829E684AB00E6CE0A /* LoadingView.swift in Sources */,
 				171AFF0029E5394400FBFC05 /* SwiftUIStringBundleInitable.swift in Sources */,

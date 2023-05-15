@@ -9,6 +9,25 @@ import SwiftUI
 
 
 extension String {
+    /// General
+    static var generalEmail: String { return LocalizableStringKeys.General.email.localized }
+    static var generalPassword: String { return LocalizableStringKeys.General.password.localized }
+    static var generalReEnterPassword: String { return LocalizableStringKeys.General.reEnterPassword.localized }
+    static var generalContinu: String { return LocalizableStringKeys.General.continu.localized }
+    static var generalLogin: String { return LocalizableStringKeys.General.login.localized }
+    static var generalSignup: String { return LocalizableStringKeys.General.signup.localized }
+
+
+    /// Error
+    static var errorInvalidEmail: String { return LocalizableStringKeys.Error.invalidEmail.localized }
+    static var errorInvalidPassword: String { return LocalizableStringKeys.Error.invalidPassword.localized }
+    static var errorPasswordsDontMatch: String { return LocalizableStringKeys.Error.passwordsDontMatch.localized }
+
+
+    /// EmailCheck
+    static var emailCheckScreenTitle: String { return LocalizableStringKeys.EmailCheck.screenTitle.localized }
+
+
     /// Login
     static var loginScreenTitle: String { return LocalizableStringKeys.Login.screenTitle.localized }
 

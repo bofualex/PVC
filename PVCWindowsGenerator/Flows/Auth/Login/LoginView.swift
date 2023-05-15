@@ -14,9 +14,9 @@ struct LoginView: View {
     
     var body: some View {
         NavigationBar(
-            barType: .title(title: "Login"),
+            barType: .title(title: .loginScreenTitle),
             contentView: {
-                Text("login")
+                Text(verbatim: .loginScreenTitle)
             },
             leftButtonAction: {
                 router.pop()
@@ -32,5 +32,6 @@ struct LoginView_Previews: PreviewProvider {
                 authService: AuthenticationServiceMock()
             )
         )
+        .environmentObject(AuthCoordinator.mockedRouter)
     }
 }

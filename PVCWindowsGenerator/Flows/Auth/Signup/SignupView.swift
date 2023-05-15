@@ -1,24 +1,25 @@
 //
-//  EmailCheckView.swift
+//  SignupView.swift
 //  PVCWindowsGenerator
 //
-//  Created by Alex Bofu on 11.04.2023.
+//  Created by Alex Bofu on 04.05.2023.
 //
 
 import SwiftUI
-import Stinsen
 
-struct EmailCheckView: View {
+struct SignupView: View {
     
     @EnvironmentObject private var router: AuthCoordinator.Router
-    @ObservedObject var viewModel: EmailCheckViewModel
-
+    @ObservedObject var viewModel: SignupViewModel
+    
     var body: some View {
         NavigationBar(
-            barType: .logo(image: .generalLogo),
-            isBackButtonHidden: true,
+            barType: .title(title: .signupScreenTitle),
             contentView: {
                 content
+            },
+            leftButtonAction: {
+                router.pop()
             }
         )
         .fillBackground(.lightF5EDEC)
@@ -30,8 +31,10 @@ struct EmailCheckView: View {
     
     private var content: some View {
         VStack(alignment: .center, spacing: 24) {
-            title
-            email
+            VStack(alignment: .center, spacing: 0) {
+                password
+                reEnterPassword
+            }
             cta
             Spacer()
         }
@@ -40,15 +43,26 @@ struct EmailCheckView: View {
     }
     
     private var title: some View {
-        Text(verbatim: .emailCheckScreenTitle)
+        Text(verbatim: .signupScreenTitle)
             .font(.rubikBlack28)
             .foregroundColor(.light2B2B2B)
     }
     
-    private var email: some View {
+    private var password: some View {
         PlaceholderTextfield(
-            text: $viewModel.email,
-            placeholder: .generalEmail,
+            text: $viewModel.password,
+            placeholder: .generalPassword.capitalized,
+            isSecureTextEntry: true,
+            backgroundColor: .lightFFFFFF
+        )
+        .disabled(viewModel.isLoading)
+    }
+    
+    private var reEnterPassword: some View {
+        PlaceholderTextfield(
+            text: $viewModel.reenteredPassword,
+            placeholder: .generalReEnterPassword.capitalized,
+            isSecureTextEntry: true,
             backgroundColor: .lightFFFFFF
         )
         .disabled(viewModel.isLoading)
@@ -56,20 +70,19 @@ struct EmailCheckView: View {
     
     private var cta: some View {
         Buttons.FilledButton(
-            title: .generalContinu.capitalized,
+            title: .generalSignup.capitalized,
             isLoading: viewModel.isLoading,
-            action: viewModel.checkEmail
+            action: viewModel.handleSignupTapped
         )
     }
 }
 
-struct EmailCheckView_Previews: PreviewProvider {
-    
+struct SignupView_Previews: PreviewProvider {
     static var previews: some View {
-        EmailCheckView(
+        SignupView(
             viewModel: .init(
                 authService: AuthenticationServiceMock(),
-                email: .constant("")
+                email: ""
             )
         )
         .environmentObject(AuthCoordinator.mockedRouter)

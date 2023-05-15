@@ -24,8 +24,8 @@ struct NavigationBar<
     @ViewBuilder
     var rightView: RightView
     
-    private var barHeight: CGFloat? {
-        return 108 - safeAreaInsets.top
+    private var minBarHeight: CGFloat? {
+        return 68 - safeAreaInsets.top
     }
     
     var body: some View {
@@ -37,12 +37,12 @@ struct NavigationBar<
                     .frame(maxWidth: .infinity)
                     .padding(.horizontal, 24)
                     .padding(.bottom, 16)
-                    .frame(minHeight: barHeight)
+                    .frame(minHeight: minBarHeight)
                     .background(
                         LinearGradient(
                             colors: [
-                                .lightC34246.opacity(1),
-                                .light438BF6.opacity(1)
+                                .lightC34246.opacity(0.2),
+                                .light438BF6.opacity(0.2)
                             ],
                             startPoint: .top,
                             endPoint: .bottom
@@ -58,14 +58,18 @@ struct NavigationBar<
     @ViewBuilder
     private var navigationContent: some View {
         switch barType {
-        case .logo:
+        case .logo(let image):
             ZStack {
                 backButtonView
                     .frame(
                         maxWidth: .infinity,
                         alignment: .leading
                     )
-                Image("logo")
+                image
+                    .resizable()
+                    .aspectRatio(contentMode: .fit)
+                    .frame(maxHeight: 34)
+                    .clipped()
                 rightView
                     .frame(
                         maxWidth: .infinity,
@@ -101,7 +105,7 @@ struct NavigationBar<
             .font(.rubikBold26)
             .lineLimit(2)
             .minimumScaleFactor(0.8)
-            .foregroundColor(.lightF5EDEC)
+            .foregroundColor(.light2B2B2B)
             .multilineTextAlignment(.center)
             .frame(maxWidth: .infinity)
     }
@@ -114,7 +118,7 @@ struct NavigationBar_Previews: PreviewProvider {
         
         var body: some View {
             NavigationBar(
-                barType: .title(title: "Test title"),
+                barType: .title(title: .signupScreenTitle),///.logo(image: .generalLogo),
                 contentView: {
                     ScrollView {
                         VStack {
