@@ -51,26 +51,15 @@ class SignupViewModel: ObservableObject {
         
         loadTask = Task { @MainActor in
             do {
-                let user = try await authService.createUser(
+                try await authService.createUser(
                     with: email,
                     password: password
                 )
-                
             } catch {
                 self.error = error
             }
             
             isLoading = false
-        }
-    }
-    
-    //MARK: - private
-    private func handleSignupResponse(_ isRegistered: Bool) {
-        switch isRegistered {
-        case false:
-            router?.route(to: \.signupView)
-        case true:
-            router?.route(to: \.loginView)
         }
     }
 }

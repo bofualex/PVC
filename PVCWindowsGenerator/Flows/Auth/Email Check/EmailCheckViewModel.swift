@@ -9,7 +9,7 @@ import SwiftUI
 
 class EmailCheckViewModel: ObservableObject {
     
-    @Binding var email: String
+    @Published var email = ""
     @Published var isLoading = false
     @Published var error: Error?
     
@@ -20,11 +20,9 @@ class EmailCheckViewModel: ObservableObject {
     
     //MARK: - init
     init(
-        authService: AuthenticationServiceProtocol,
-        email: Binding<String>
+        authService: AuthenticationServiceProtocol
     ) {
         self.authService = authService
-        self._email = email
     }
     
     deinit {
@@ -56,9 +54,9 @@ class EmailCheckViewModel: ObservableObject {
     private func handleIsRegisteredResponse(_ isRegistered: Bool) {
         switch isRegistered {
         case false:
-            router?.route(to: \.signupView)
+            router?.route(to: \.signupView, email)
         case true:
-            router?.route(to: \.loginView)
+            router?.route(to: \.loginView, email)
         }
     }
 }

@@ -16,6 +16,14 @@ extension String {
     static var generalContinu: String { return LocalizableStringKeys.General.continu.localized }
     static var generalLogin: String { return LocalizableStringKeys.General.login.localized }
     static var generalSignup: String { return LocalizableStringKeys.General.signup.localized }
+    static var generalLogout: String { return LocalizableStringKeys.General.logout.localized }
+
+
+    /// Tabbar
+    static var tabbarHome: String { return LocalizableStringKeys.Tabbar.home.localized }
+    static var tabbarOffers: String { return LocalizableStringKeys.Tabbar.offers.localized }
+    static var tabbarContracts: String { return LocalizableStringKeys.Tabbar.contracts.localized }
+    static var tabbarMenu: String { return LocalizableStringKeys.Tabbar.menu.localized }
 
 
     /// Error
@@ -34,4 +42,20 @@ extension String {
 
     /// Signup
     static var signupScreenTitle: String { return LocalizableStringKeys.Signup.screenTitle.localized }
+
+
+    /// Home
+    static var homeScreenTitle: String { return LocalizableStringKeys.Home.screenTitle.localized }
+
+
+    /// Offers
+    static var offersScreenTitle: String { return LocalizableStringKeys.Offers.screenTitle.localized }
+
+
+    /// Contracts
+    static var contractsScreenTitle: String { return LocalizableStringKeys.Contracts.screenTitle.localized }
+
+
+    /// Menu
+    static var menuScreenTitle: String { return LocalizableStringKeys.Menu.screenTitle.localized }
 }

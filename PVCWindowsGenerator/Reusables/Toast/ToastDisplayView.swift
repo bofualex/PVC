@@ -26,8 +26,17 @@ struct ToastDisplayView: View {
                 .padding(.horizontal, 24)
                 .gesture(dragGesture())
                 .transition(.moveAndFadeFromTop)
-                .animation(.easeIn(duration: 0.4), value: yTranslation)
-                .animation(.spring(response: 0.4, dampingFraction: 0.6, blendDuration: 1))
+                .animation(
+                    .easeIn(duration: 0.4),
+                    value: yTranslation
+                )
+                .animation(
+                    .spring(
+                        response: 0.4,
+                        dampingFraction: 0.6,
+                        blendDuration: 1
+                    )
+                )
                 .onAppear {
                     automaticDismiss(after: 2)
                 }

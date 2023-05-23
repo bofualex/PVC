@@ -13,6 +13,13 @@
 "continu" = "continue";
 "login" = "login";
 "signup" = "sign up";
+"logout" = "log out";
+
+//MARK: - tabbar
+"home" = "home";
+"offers" = "offers";
+"contracts" = "contracts";
+"menu" = "menu";
 
 //MARK: - error
 "invalid_email" = "Please enter a valid email";
@@ -25,6 +32,17 @@
 //MARK: - login
 "login_screen_title" = "Login";
 
-
 //MARK: - signup
 "signup_screen_title" = "Sign Up";
+
+//MARK: - home
+"home_screen_title" = "home";
+
+//MARK: - offers
+"offers_screen_title" = "offers";
+
+//MARK: - contracts
+"contracts_screen_title" = "contracts";
+
+//MARK: - menu
+"menu_screen_title" = "menu";

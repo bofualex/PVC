@@ -6,7 +6,6 @@
 //
 
 import SwiftUI
-import Firebase
 import Stinsen
 
 @main
@@ -14,25 +13,16 @@ struct PVCWindowsGeneratorApp: App {
     
     @UIApplicationDelegateAdaptor(AppDelegate.self) var appDelegate
     
-    let dependencyContainer: DependencyContainer
-    @State private var isLoadingMainData = true
-        
-    init() {
-        FirebaseApp.configure()
-        dependencyContainer = .default
-    }
-    
+    @StateObject private var viewModel = AppViewModel()
+
     var body: some Scene {
         WindowGroup {
-            switch isLoadingMainData {
-            case true:
+            switch viewModel.isAuthenticated {
+            case .none:
                 LaunchScreenView()
-                    .task {
-                        performInitialization()
-                    }
-            case false:
-                switch dependencyContainer.authService.currentUser {
-                case .none:
+            case .some(let isAuthenticated):
+                switch isAuthenticated {
+                case false:
                     authFlow
                 default:
                     mainFlow
@@ -43,19 +33,15 @@ struct PVCWindowsGeneratorApp: App {
     
     private var authFlow: some View {
         NavigationViewCoordinator(
-            AuthCoordinator(dependencyContainer: dependencyContainer)
-        ).view()
+            AuthCoordinator(dependencyContainer: viewModel.dependencyContainer)
+        )
+        .view()
     }
     
     private var mainFlow: some View {
-        Color.red
-    }
-    
-    //MARK: - private
-    private func performInitialization() {
-        Task(priority: .userInitiated) {
-            await dependencyContainer.authService.checkAuthStatus()
-            isLoadingMainData = false
-        }
+        NavigationViewCoordinator(
+            MainCoordinator(dependencyContainer: viewModel.dependencyContainer)
+        )
+        .view()
     }
 }

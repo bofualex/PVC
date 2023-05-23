@@ -10,6 +10,7 @@ import SwiftUI
 struct PlaceholderTextfield: View {
     
     @Binding var text: String
+    
     @State private var isShowingSecureText = false
     @State private var placeholderSize = CGSize.zero
     @FocusState private var isFocused: Bool

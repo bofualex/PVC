@@ -11,15 +11,7 @@ extension String {
     private enum Regex: String {
         case email = "[A-Z0-9a-z._%+-]+@[A-Za-z0-9.-]+\\.[A-Za-z]{2,64}"
         case name = "\\w{7,18}"
-        /*
-         ^                         Start anchor
-         (?=.*[A-Z].*[A-Z])        Ensure string has one uppercase letter.
-         (?=.*[!@#$&*])            Ensure string has one special case letter.
-         (?=.*[0-9].*[0-9])        Ensure string has one digit.
-         .{8}                      Ensure string is of length 8.
-         $                         End anchor.
-         */
-        case password = "^(?=.*[A-Z])(?=.*[!@#$&*])(?=.*[0-9]).{8}$"
+        case password = "^(?=.*[a-z])(?=.*[A-Z])(?=.*\\d)(?=.*[d$@$!%*?&#])[A-Za-z\\dd$@$!%*?&#]{8,}"
         
         func isValid(for string: String) -> Bool {
             let test = NSPredicate(format: "SELF MATCHES %@", rawValue)

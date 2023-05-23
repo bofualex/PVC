@@ -10,7 +10,6 @@ import Stinsen
 
 final class AuthCoordinator: NavigationCoordinatable {
     
-    var email = ""
     let stack = NavigationStack(initial: \AuthCoordinator.start)
     let dependencyContainer: any DependencyContainerProtocol
     

@@ -16,6 +16,14 @@ enum LocalizableStringKeys {
         case continu = "continu"
         case login = "login"
         case signup = "signup"
+        case logout = "logout"
+    }
+
+    enum Tabbar: String, LocalizableStringKey {
+        case home = "home"
+        case offers = "offers"
+        case contracts = "contracts"
+        case menu = "menu"
     }
 
     enum Error: String, LocalizableStringKey {
@@ -34,5 +42,21 @@ enum LocalizableStringKeys {
 
     enum Signup: String, LocalizableStringKey {
         case screenTitle = "signup_screen_title"
+    }
+
+    enum Home: String, LocalizableStringKey {
+        case screenTitle = "home_screen_title"
+    }
+
+    enum Offers: String, LocalizableStringKey {
+        case screenTitle = "offers_screen_title"
+    }
+
+    enum Contracts: String, LocalizableStringKey {
+        case screenTitle = "contracts_screen_title"
+    }
+
+    enum Menu: String, LocalizableStringKey {
+        case screenTitle = "menu_screen_title"
     }
 }

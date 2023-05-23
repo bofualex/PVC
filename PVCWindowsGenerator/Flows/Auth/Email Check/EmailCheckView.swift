@@ -68,8 +68,7 @@ struct EmailCheckView_Previews: PreviewProvider {
     static var previews: some View {
         EmailCheckView(
             viewModel: .init(
-                authService: AuthenticationServiceMock(),
-                email: .constant("")
+                authService: AuthenticationServiceMock()
             )
         )
         .environmentObject(AuthCoordinator.mockedRouter)

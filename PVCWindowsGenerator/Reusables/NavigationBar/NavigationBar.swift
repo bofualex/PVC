@@ -23,11 +23,7 @@ struct NavigationBar<
     var contentView: ContentView
     @ViewBuilder
     var rightView: RightView
-    
-    private var minBarHeight: CGFloat? {
-        return 68 - safeAreaInsets.top
-    }
-    
+
     var body: some View {
         contentView
             .ignoresSafeArea(edges: .bottom)
@@ -36,13 +32,12 @@ struct NavigationBar<
                 navigationContent
                     .frame(maxWidth: .infinity)
                     .padding(.horizontal, 24)
-                    .padding(.bottom, 16)
-                    .frame(minHeight: minBarHeight)
+                    .padding(.bottom, 12)
                     .background(
                         LinearGradient(
                             colors: [
-                                .lightC34246.opacity(0.2),
-                                .light438BF6.opacity(0.2)
+                                .lightC34246.opacity(0.3),
+                                .light438BF6.opacity(0.3)
                             ],
                             startPoint: .top,
                             endPoint: .bottom
@@ -102,7 +97,7 @@ struct NavigationBar<
     
     private func titleView(text: String) -> some View {
         Text(text)
-            .font(.rubikBold26)
+            .font(.rubikBlack22)
             .lineLimit(2)
             .minimumScaleFactor(0.8)
             .foregroundColor(.light2B2B2B)
