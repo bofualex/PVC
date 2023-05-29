@@ -26,8 +26,17 @@
 "invalid_password" = "Your password must be at least 8 characters long and it must contain an uppercase letter, a digit and a special character (!@#$&*)";
 "passwords_dont_match" = "Passwords don't match";
 
+//MARK: - authorization
+"authorization_email_check_title" = "Welcome to PVC Offers";
+"authorization_email_check_subtitle" = "Our mission is to design an app to make offering an easy and intuitive task";
+"authorization_login_title" = "We're glad to have you back";
+"authorization_login_subtitle" = "Please enter your password and continue inside the app";
+"authorization_signup_title" = "Hey there new user";
+"authorization_signup_subtitle" = "Create an account and start exploring our wonderful app";
+
 //MARK: - email check
-"email_check_screen_title" = "Intră sau Creează Cont";
+"email_check_screen_title" = "Welcome to PVC Offers";
+"email_check_screen_subtitle" = "Our mission is to design an app to make offering an easy and intuitive task";
 
 //MARK: - login
 "login_screen_title" = "Login";

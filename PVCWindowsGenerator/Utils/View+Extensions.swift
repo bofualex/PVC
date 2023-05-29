@@ -61,6 +61,20 @@ extension View {
     ) -> some View {
         background(color.ignoresSafeArea(.container, edges: edges))
     }
+    
+    func fillWithDefaultScreenBackground() -> some View {
+        background {
+            ZStack(alignment: .top) {
+                Color.lightEEEEEE
+                    .frame(maxWidth: .infinity, maxHeight: .infinity)
+                    .layoutPriority(1)
+                
+                Image.generalOverlappingCircles
+                    .frame(maxWidth: .infinity, alignment: .leading)
+            }
+            .ignoresSafeArea(.container, edges: .all)
+        }
+    }
 
     func readKeyboardHeight(_ keyboardHeight: Binding<CGFloat>) -> some View {
         self.onReceive(Publishers.keyboardHeight) { currentKeyboardHeight in
@@ -97,36 +111,6 @@ extension View {
         }
     }
 }
-
-struct EmailViewModifier: ViewModifier {
-    func body(content: Content) -> some View {
-        content
-            .keyboardType(.emailAddress)
-            .autocapitalization(.none)
-            .disableAutocorrection(true)
-            .frame(height: 50)
-            .padding(.horizontal)
-            .overlay(
-                RoundedRectangle(cornerRadius: 20)
-                    .stroke(Color.lightC34246)
-            )
-    }
-}
-
-struct PasswordViewModifier: ViewModifier {
-    func body(content: Content) -> some View {
-        content
-            .autocapitalization(.none)
-            .disableAutocorrection(true)
-            .frame(height: 50)
-            .padding(.horizontal)
-            .overlay(
-                RoundedRectangle(cornerRadius: 20)
-                    .stroke(Color.lightC34246)
-            )
-    }
-}
-
 
 func becomeFirstResponder() {
     // a trick from Stack Overflow: https://stackoverflow.com/questions/54953868/uiapplications-sendaction-works-even-if-targetforaction-is-nil

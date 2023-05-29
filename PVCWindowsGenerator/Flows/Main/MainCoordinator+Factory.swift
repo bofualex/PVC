@@ -12,10 +12,8 @@ extension MainCoordinator {
     
     @ViewBuilder
     func makeStart() -> some View {
-        TabBarView(
-            viewModel: TabBarViewModel()
-        )
-        .environmentObject(self)
+        RoutesFactory.tabBarView()
+            .environmentObject(self)
     }
     
     var home: some View {

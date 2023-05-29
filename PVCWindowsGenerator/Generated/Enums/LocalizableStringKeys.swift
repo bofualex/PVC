@@ -32,8 +32,18 @@ enum LocalizableStringKeys {
         case passwordsDontMatch = "passwords_dont_match"
     }
 
+    enum Authorization: String, LocalizableStringKey {
+        case emailCheckTitle = "authorization_email_check_title"
+        case emailCheckSubtitle = "authorization_email_check_subtitle"
+        case loginTitle = "authorization_login_title"
+        case loginSubtitle = "authorization_login_subtitle"
+        case signupTitle = "authorization_signup_title"
+        case signupSubtitle = "authorization_signup_subtitle"
+    }
+
     enum EmailCheck: String, LocalizableStringKey {
         case screenTitle = "email_check_screen_title"
+        case screenSubtitle = "email_check_screen_subtitle"
     }
 
     enum Login: String, LocalizableStringKey {

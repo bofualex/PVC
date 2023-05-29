@@ -12,7 +12,7 @@ extension HomeCoordinator {
 
     @ViewBuilder
     func makeStart() -> some View {
-        HomeView()
+        RoutesFactory.homeView()
     }
 }
 

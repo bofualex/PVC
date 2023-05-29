@@ -12,11 +12,7 @@ extension MenuCoordinator {
 
     @ViewBuilder
     func makeStart() -> some View {
-        MenuView(
-            viewModel: .init(
-                authenticationService: dependencyContainer.authService
-            )
-        )
+        RoutesFactory.menuView(authService: dependencyContainer.authService)
     }
 }
 

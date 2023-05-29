@@ -12,8 +12,10 @@ enum ColorName: String {
     case light2B2B2B = "light2B2B2B"
     case light438BF6 = "light438BF6"
     case light4BD894 = "light4BD894"
+    case light9DC2CE = "light9DC2CE"
     case lightC34246 = "lightC34246"
     case lightEC8C34 = "lightEC8C34"
+    case lightEEEEEE = "lightEEEEEE"
     case lightF5EDEC = "lightF5EDEC"
     case lightFFFFFF = "lightFFFFFF"
 }

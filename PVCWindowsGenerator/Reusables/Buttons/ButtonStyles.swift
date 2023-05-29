@@ -85,10 +85,11 @@ struct ButtonStyles {
                 .padding(size.insets)
                 .frame(maxWidth: .infinity)
                 .background(
-                    RoundedRectangle(cornerRadius: 15)
+                    RoundedRectangle(cornerRadius: 10)
                         .fill(fillColor)
                 )
                 .opacity(configuration.isPressed ? 0.5 : 1)
+                .opacity(isEnabled ? 1 : 0.5)
         }
     }
 

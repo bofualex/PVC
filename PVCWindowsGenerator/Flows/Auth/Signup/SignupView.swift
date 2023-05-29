@@ -53,6 +53,7 @@ struct SignupView: View {
             text: $viewModel.password,
             placeholder: .generalPassword.capitalized,
             isSecureTextEntry: true,
+            textContentType: .password,
             backgroundColor: .lightFFFFFF
         )
         .disabled(viewModel.isLoading)
@@ -63,6 +64,7 @@ struct SignupView: View {
             text: $viewModel.reenteredPassword,
             placeholder: .generalReEnterPassword.capitalized,
             isSecureTextEntry: true,
+            textContentType: .password,
             backgroundColor: .lightFFFFFF
         )
         .disabled(viewModel.isLoading)

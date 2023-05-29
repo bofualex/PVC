@@ -70,8 +70,8 @@ extension Buttons.FilledButton where SupplementaryView == EmptyView {
         title: String,
         isEnabled: Bool = true,
         isLoading: Bool = false,
-        fillColor: Color = .lightC34246,
-        font: Font = .rubikBold16,
+        fillColor: Color = .light9DC2CE,
+        font: Font = .rubikSemiBold16,
         accentColor: Color = .lightFFFFFF,
         size: ButtonSize = .medium,
         action: VoidCallback?

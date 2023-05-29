@@ -16,9 +16,13 @@ struct PlaceholderTextfield: View {
     @FocusState private var isFocused: Bool
     
     let placeholder: String
-    var errorText: String? = nil
+    var error: LocalError? = nil
     var showsBorder = true
     var isSecureTextEntry = false
+    var isAutoCorrectDisabled = true
+    var keyboardType = UIKeyboardType.default
+    var textInputAutocapitalization = TextInputAutocapitalization.never
+    var textContentType: UITextContentType?
     var backgroundColor = Color.lightFFFFFF
     var foregroundColor = Color.light2B2B2B
     var errorColor = Color.lightC34246
@@ -33,8 +37,8 @@ struct PlaceholderTextfield: View {
                             .padding(.trailing, 12)
                     }
                 
-                if let errorText {
-                    errorView(errorText)
+                if let error {
+                    errorView(error)
                 }
             }
             
@@ -53,8 +57,12 @@ struct PlaceholderTextfield: View {
     private var content: some View {
         inputView
             .focused($isFocused)
-            .font(.rubikMedium18)
-            .foregroundColor(errorText == nil ? foregroundColor : errorColor)
+            .autocorrectionDisabled(isAutoCorrectDisabled)
+            .keyboardType(keyboardType)
+            .textInputAutocapitalization(textInputAutocapitalization)
+            .textContentType(textContentType)
+            .font(.rubikRegular18)
+            .foregroundColor(error == nil ? foregroundColor : errorColor)
             .kerning(1.2)
             .frame(height: 30)
             .padding(.horizontal, 16)
@@ -95,7 +103,7 @@ struct PlaceholderTextfield: View {
                 interruptionWidth: text.isEmpty ? 0 : placeholderSize.width
             )
             .stroke(
-                (isFocused ? focusedColor : errorText != nil ? errorColor : foregroundColor                .opacity(0.3)),
+                (isFocused ? focusedColor : error != nil ? errorColor : foregroundColor                .opacity(0.3)),
                 style: .init(
                     lineWidth: 1,
                     lineCap: .round,
@@ -131,7 +139,8 @@ struct PlaceholderTextfield: View {
         Text(placeholder)
             .foregroundColor(foregroundColor)
             .opacity(0.5)
-            .font(.rubikSemiBold14)
+            .font(.rubikRegular14)
+            .kerning(0.8)
             .padding(.horizontal, 4)
             .readContentFrame { size in
                 DispatchQueue.main.async {
@@ -140,14 +149,14 @@ struct PlaceholderTextfield: View {
             }
     }
     
-    private func errorView(_ text: String) -> some View {
-        Text(text)
-            .font(.rubikMedium18)
-            .foregroundColor(errorText == nil ? foregroundColor : errorColor)
-            .kerning(1.2)
-            .frame(height: 30)
+    private func errorView(_ error: LocalError) -> some View {
+        Text(error.message)
+            .font(.rubikRegular14)
+            .foregroundColor(errorColor)
+            .multilineTextAlignment(.leading)
+            .lineSpacing(1.6)
+            .kerning(1.1)
             .padding(.horizontal, 16)
-            .padding(.vertical, 10)
     }
 }
 
@@ -159,13 +168,13 @@ struct PlaceholderTextfield_Previews: PreviewProvider {
         
         var body: some View {
             NavigationBar(
-                barType: .logo(image: .generalLogo),
+                barType: .none,
                 isBackButtonHidden: true,
                 contentView: {
                     PlaceholderTextfield(
                         text: $text,
                         placeholder: "password",
-                        errorText: nil,
+                        error: LocalError(message: "test"),
                         isSecureTextEntry: false
                     )
                     .padding(.horizontal, 24)

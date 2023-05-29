@@ -50,6 +50,7 @@ struct LoginView: View {
             text: $viewModel.password,
             placeholder: .generalPassword.capitalized,
             isSecureTextEntry: true,
+            textContentType: .password,
             backgroundColor: .lightFFFFFF
         )
         .disabled(viewModel.isLoading)

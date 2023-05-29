@@ -12,7 +12,7 @@ extension ContractsCoordinator {
 
     @ViewBuilder
     func makeStart() -> some View {
-        ContractsView()
+        RoutesFactory.contractsView()
     }
 }
 

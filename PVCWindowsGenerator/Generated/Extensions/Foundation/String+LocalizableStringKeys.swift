@@ -32,8 +32,18 @@ extension String {
     static var errorPasswordsDontMatch: String { return LocalizableStringKeys.Error.passwordsDontMatch.localized }
 
 
+    /// Authorization
+    static var authorizationEmailCheckTitle: String { return LocalizableStringKeys.Authorization.emailCheckTitle.localized }
+    static var authorizationEmailCheckSubtitle: String { return LocalizableStringKeys.Authorization.emailCheckSubtitle.localized }
+    static var authorizationLoginTitle: String { return LocalizableStringKeys.Authorization.loginTitle.localized }
+    static var authorizationLoginSubtitle: String { return LocalizableStringKeys.Authorization.loginSubtitle.localized }
+    static var authorizationSignupTitle: String { return LocalizableStringKeys.Authorization.signupTitle.localized }
+    static var authorizationSignupSubtitle: String { return LocalizableStringKeys.Authorization.signupSubtitle.localized }
+
+
     /// EmailCheck
     static var emailCheckScreenTitle: String { return LocalizableStringKeys.EmailCheck.screenTitle.localized }
+    static var emailCheckScreenSubtitle: String { return LocalizableStringKeys.EmailCheck.screenSubtitle.localized }
 
 
     /// Login

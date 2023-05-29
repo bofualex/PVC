@@ -35,7 +35,7 @@ class AppViewModel: ObservableObject {
     //MARK: - private
     private func performInitialization() {
         Task(priority: .userInitiated) { @MainActor in
-            try? await Task.sleep(for: .seconds(12))
+            try? await Task.sleep(for: .seconds(5))
 
             dependencyContainer.authService.retrieveAuthStatus()
         }

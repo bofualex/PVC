@@ -12,6 +12,6 @@ extension OffersCoordinator {
 
     @ViewBuilder
     func makeStart() -> some View {
-        OffersView()
+        RoutesFactory.offersView()
     }
 }

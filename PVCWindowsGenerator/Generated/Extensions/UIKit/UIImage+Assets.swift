@@ -15,4 +15,6 @@ extension UIImage: UIKitStringRepresentableInitable {
     static var generalEyeClosed: UIImage { return .init(AssetName.General.eyeClosed) }
     static var generalEyeOpen: UIImage { return .init(AssetName.General.eyeOpen) }
     static var generalLogo: UIImage { return .init(AssetName.General.logo) }
+    static var generalOverlappingCircles: UIImage { return .init(AssetName.General.overlappingCircles) }
+    static var generalWelcomeArtboard: UIImage { return .init(AssetName.General.welcomeArtboard) }
 }

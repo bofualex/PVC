@@ -15,5 +15,7 @@ enum AssetName {
         case eyeClosed = "eyeClosed"
         case eyeOpen = "eyeOpen"
         case logo = "logo"
+        case overlappingCircles = "overlappingCircles"
+        case welcomeArtboard = "welcomeArtboard"
     }
 }

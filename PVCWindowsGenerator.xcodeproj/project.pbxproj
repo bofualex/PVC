@@ -76,6 +76,9 @@
 		171AFF4229E547F700FBFC05 /* FirebaseAuth in Frameworks */ = {isa = PBXBuildFile; productRef = 171AFF4129E547F700FBFC05 /* FirebaseAuth */; };
 		171AFF4429E547F700FBFC05 /* FirebaseCrashlytics in Frameworks */ = {isa = PBXBuildFile; productRef = 171AFF4329E547F700FBFC05 /* FirebaseCrashlytics */; };
 		171AFF4629E547F700FBFC05 /* FirebaseDatabaseSwift in Frameworks */ = {isa = PBXBuildFile; productRef = 171AFF4529E547F700FBFC05 /* FirebaseDatabaseSwift */; };
+		173AB4C52A1E122600DD39C6 /* RoutesFactory.swift in Sources */ = {isa = PBXBuildFile; fileRef = 173AB4C42A1E122600DD39C6 /* RoutesFactory.swift */; };
+		1754FCFB2A1E7CAA00285810 /* AuthorizationView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1754FCFA2A1E7CAA00285810 /* AuthorizationView.swift */; };
+		1754FCFD2A1E7CBA00285810 /* AuthorizationViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1754FCFC2A1E7CBA00285810 /* AuthorizationViewModel.swift */; };
 		176C21242A00DF4300CF7216 /* PlaceholderTextfield.swift in Sources */ = {isa = PBXBuildFile; fileRef = 176C21232A00DF4300CF7216 /* PlaceholderTextfield.swift */; };
 		176C21262A02452400CF7216 /* String+Extensions.swift in Sources */ = {isa = PBXBuildFile; fileRef = 176C21252A02452400CF7216 /* String+Extensions.swift */; };
 		176C21292A0247B600CF7216 /* ToastDisplayView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 176C21282A0247B600CF7216 /* ToastDisplayView.swift */; };
@@ -114,6 +117,7 @@
 		17D0C63E29EB38CF00E6CE0A /* Stinsen in Frameworks */ = {isa = PBXBuildFile; productRef = 17D0C63D29EB38CF00E6CE0A /* Stinsen */; };
 		17D0C64029EDD74300E6CE0A /* AuthCoordinator+Factory.swift in Sources */ = {isa = PBXBuildFile; fileRef = 17D0C63F29EDD74300E6CE0A /* AuthCoordinator+Factory.swift */; };
 		17D0C64229EDDD9000E6CE0A /* Environment+Custom.swift in Sources */ = {isa = PBXBuildFile; fileRef = 17D0C64129EDDD9000E6CE0A /* Environment+Custom.swift */; };
+		17F631DE2A2476D500EAD920 /* KeyboardAdaptable.swift in Sources */ = {isa = PBXBuildFile; fileRef = 17F631DD2A2476D500EAD920 /* KeyboardAdaptable.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -202,6 +206,9 @@
 		171AFF3629E5454000FBFC05 /* NetworkService.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NetworkService.swift; sourceTree = "<group>"; };
 		171AFF3829E5456500FBFC05 /* StorageService.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = StorageService.swift; sourceTree = "<group>"; };
 		171AFF3C29E546E700FBFC05 /* GoogleService-Info.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = "GoogleService-Info.plist"; sourceTree = "<group>"; };
+		173AB4C42A1E122600DD39C6 /* RoutesFactory.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RoutesFactory.swift; sourceTree = "<group>"; };
+		1754FCFA2A1E7CAA00285810 /* AuthorizationView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AuthorizationView.swift; sourceTree = "<group>"; };
+		1754FCFC2A1E7CBA00285810 /* AuthorizationViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AuthorizationViewModel.swift; sourceTree = "<group>"; };
 		176C21232A00DF4300CF7216 /* PlaceholderTextfield.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PlaceholderTextfield.swift; sourceTree = "<group>"; };
 		176C21252A02452400CF7216 /* String+Extensions.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "String+Extensions.swift"; sourceTree = "<group>"; };
 		176C21282A0247B600CF7216 /* ToastDisplayView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ToastDisplayView.swift; sourceTree = "<group>"; };
@@ -240,6 +247,7 @@
 		17D0C63829EAC0B800E6CE0A /* AuthCoordinator.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AuthCoordinator.swift; sourceTree = "<group>"; };
 		17D0C63F29EDD74300E6CE0A /* AuthCoordinator+Factory.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "AuthCoordinator+Factory.swift"; sourceTree = "<group>"; };
 		17D0C64129EDDD9000E6CE0A /* Environment+Custom.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "Environment+Custom.swift"; sourceTree = "<group>"; };
+		17F631DD2A2476D500EAD920 /* KeyboardAdaptable.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = KeyboardAdaptable.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -448,10 +456,11 @@
 		171AFEBD29E408CE00FBFC05 /* Services */ = {
 			isa = PBXGroup;
 			children = (
+				171AFF3229E544F300FBFC05 /* Dependency Container */,
 				17D0C5D729E5758C00E6CE0A /* Auth Service */,
 				171AFF3A29E5456B00FBFC05 /* Storage Service */,
 				171AFF3529E5452B00FBFC05 /* Network Service */,
-				171AFF3229E544F300FBFC05 /* Dependency Container */,
+				173AB4C32A1E120F00DD39C6 /* Routes Factory */,
 			);
 			path = Services;
 			sourceTree = "<group>";
@@ -468,6 +477,7 @@
 				17D0C64129EDDD9000E6CE0A /* Environment+Custom.swift */,
 				176C21252A02452400CF7216 /* String+Extensions.swift */,
 				176C212A2A02483A00CF7216 /* Transition+Extensions.swift */,
+				17F631DD2A2476D500EAD920 /* KeyboardAdaptable.swift */,
 			);
 			path = Utils;
 			sourceTree = "<group>";
@@ -477,6 +487,7 @@
 			children = (
 				17D0C63829EAC0B800E6CE0A /* AuthCoordinator.swift */,
 				17D0C63F29EDD74300E6CE0A /* AuthCoordinator+Factory.swift */,
+				1754FCF92A1E7B4400285810 /* Auth */,
 				17D0C5DC29E591B300E6CE0A /* Email Check */,
 				171AFEC129E530BA00FBFC05 /* Signup */,
 				171AFEC029E530B200FBFC05 /* Login */,
@@ -677,6 +688,23 @@
 			children = (
 			);
 			path = Firebase;
+			sourceTree = "<group>";
+		};
+		173AB4C32A1E120F00DD39C6 /* Routes Factory */ = {
+			isa = PBXGroup;
+			children = (
+				173AB4C42A1E122600DD39C6 /* RoutesFactory.swift */,
+			);
+			path = "Routes Factory";
+			sourceTree = "<group>";
+		};
+		1754FCF92A1E7B4400285810 /* Auth */ = {
+			isa = PBXGroup;
+			children = (
+				1754FCFA2A1E7CAA00285810 /* AuthorizationView.swift */,
+				1754FCFC2A1E7CBA00285810 /* AuthorizationViewModel.swift */,
+			);
+			path = Auth;
 			sourceTree = "<group>";
 		};
 		176C21222A00DF2800CF7216 /* PlaceholderTextfield */ = {
@@ -974,6 +1002,7 @@
 				1709DAE02A18A419009180C0 /* OffersCoordinator.swift in Sources */,
 				171AFF3429E5450800FBFC05 /* DependencyContainer.swift in Sources */,
 				1709DAFA2A18A4EB009180C0 /* MenuView.swift in Sources */,
+				173AB4C52A1E122600DD39C6 /* RoutesFactory.swift in Sources */,
 				1709DAE82A18A452009180C0 /* HomeCoordinator+Factory.swift in Sources */,
 				17D0C62229E8306F00E6CE0A /* FilledButton.swift in Sources */,
 				1709DAE62A18A43C009180C0 /* MenuCoordinator.swift in Sources */,
@@ -1000,6 +1029,7 @@
 				171AFF3929E5456500FBFC05 /* StorageService.swift in Sources */,
 				17D0C63929EAC0B800E6CE0A /* AuthCoordinator.swift in Sources */,
 				1709DAD82A179C5F009180C0 /* TabBarShape.swift in Sources */,
+				17F631DE2A2476D500EAD920 /* KeyboardAdaptable.swift in Sources */,
 				171AFF3729E5454000FBFC05 /* NetworkService.swift in Sources */,
 				171AFF0229E5394400FBFC05 /* LocalizableStringKeys.swift in Sources */,
 				171AFF3129E544CA00FBFC05 /* LoginViewModel.swift in Sources */,
@@ -1007,6 +1037,7 @@
 				17D0C62D29E8960000E6CE0A /* NavigationBar.swift in Sources */,
 				17D0C62629E8318800E6CE0A /* VerticalImageTextButton.swift in Sources */,
 				176C21262A02452400CF7216 /* String+Extensions.swift in Sources */,
+				1754FCFD2A1E7CBA00285810 /* AuthorizationViewModel.swift in Sources */,
 				171AFF0629E5394400FBFC05 /* UIKit+UIFont-Functions.swift in Sources */,
 				176C21242A00DF4300CF7216 /* PlaceholderTextfield.swift in Sources */,
 				171AFF0429E5394400FBFC05 /* FontType.swift in Sources */,
@@ -1018,6 +1049,7 @@
 				171AFEFE29E5394400FBFC05 /* StringRepresentableInitable.swift in Sources */,
 				17D0C5E529E599B300E6CE0A /* LaunchScreenView.swift in Sources */,
 				171AFE9129E407FE00FBFC05 /* App.swift in Sources */,
+				1754FCFB2A1E7CAA00285810 /* AuthorizationView.swift in Sources */,
 				1709DAD22A16AB5A009180C0 /* TabItem.swift in Sources */,
 				171AFF0C29E5394400FBFC05 /* SwiftUI+Font-Vars.swift in Sources */,
 				1709DADE2A18A40F009180C0 /* HomeCoordinator.swift in Sources */,

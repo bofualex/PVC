@@ -15,13 +15,13 @@ struct EmailCheckView: View {
 
     var body: some View {
         NavigationBar(
-            barType: .logo(image: .generalLogo),
+            barType: .none,
             isBackButtonHidden: true,
             contentView: {
                 content
             }
         )
-        .fillBackground(.lightF5EDEC)
+        .fillWithDefaultScreenBackground()
         .errorDisplay(error: $viewModel.error)
         .onAppear {
             viewModel.router = router
@@ -31,9 +31,10 @@ struct EmailCheckView: View {
     private var content: some View {
         VStack(alignment: .center, spacing: 24) {
             title
+            subtitle
+            logo
             email
             cta
-            Spacer()
         }
         .padding(.horizontal, 24)
         .padding(.top, 36)
@@ -41,14 +42,25 @@ struct EmailCheckView: View {
     
     private var title: some View {
         Text(verbatim: .emailCheckScreenTitle)
-            .font(.rubikBlack28)
+            .font(.rubikBold24)
             .foregroundColor(.light2B2B2B)
+    }
+    
+    private var subtitle: some View {
+        Text(verbatim: .emailCheckScreenSubtitle)
+            .font(.rubikLight16)
+            .foregroundColor(.light2B2B2B)
+            .multilineTextAlignment(.center)
+            .lineSpacing(2)
+            .opacity(0.7)
     }
     
     private var email: some View {
         PlaceholderTextfield(
             text: $viewModel.email,
             placeholder: .generalEmail,
+            keyboardType: .emailAddress,
+            textContentType: .emailAddress,
             backgroundColor: .lightFFFFFF
         )
         .disabled(viewModel.isLoading)
@@ -57,9 +69,17 @@ struct EmailCheckView: View {
     private var cta: some View {
         Buttons.FilledButton(
             title: .generalContinu.capitalized,
+            isEnabled: viewModel.email.isValidEmail,
             isLoading: viewModel.isLoading,
             action: viewModel.checkEmail
         )
+    }
+    
+    private var logo: some View {
+        Image.generalLogo
+            .resizable()
+            .frame(size: .init(edgeLength: 150))
+            .clipped()
     }
 }
 

@@ -11,30 +11,24 @@ import Stinsen
 extension AuthCoordinator {
     @ViewBuilder
     func makeLoginView(with email: String) -> some View {
-        LoginView(
-            viewModel: LoginViewModel(
-                authService: dependencyContainer.authService,
-                email: email
-            )
+        RoutesFactory.loginView(
+            authService: dependencyContainer.authService,
+            email: email
         )
     }
     
     @ViewBuilder
     func makeSignupView(with email: String) -> some View {
-        SignupView(
-            viewModel: SignupViewModel(
-                authService: dependencyContainer.authService,
-                email: email
-            )
+        RoutesFactory.signupView(
+            authService: dependencyContainer.authService,
+            email: email
         )
     }
     
     @ViewBuilder
     func makeStart() -> some View {
-        EmailCheckView(
-            viewModel: EmailCheckViewModel(
-                authService: dependencyContainer.authService
-            )
+        RoutesFactory.authorizationView(
+            authService: dependencyContainer.authService
         )
     }
 }

@@ -11,6 +11,7 @@ extension NavigationBar {
     enum BarType {
         case logo(image: Image)
         case title(title: String)
+        case none
     }
 }
 

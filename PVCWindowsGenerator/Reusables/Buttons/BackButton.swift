@@ -15,16 +15,12 @@ extension Buttons {
             Button {
                 action?()
             } label: {
-                Circle()
-                    .frame(width: 40)
-                    .foregroundColor(.lightF5EDEC)
-                    .overlay {
-                        Image.generalArrowLeft
-                            .resizableImage(size: .init(edgeLength: 16), renderingMode: .template)
-                            .foregroundColor(.light438BF6)
-                            .padding(.leading, 1)
-                    }
+                Image.generalArrowLeft
+                    .resizableImage(size: .init(edgeLength: 16), renderingMode: .template)
+                    .foregroundColor(.light2B2B2B)
+                    .padding(.leading, 1)
             }
+            .frame(size: .init(edgeLength: 40))
             .buttonStyle(.plain)
         }
     }

@@ -23,68 +23,61 @@ struct NavigationBar<
     var contentView: ContentView
     @ViewBuilder
     var rightView: RightView
-
+    
     var body: some View {
         contentView
-            .ignoresSafeArea(edges: .bottom)
+            .ignoresSafeArea(edges: .all)
             .frame(maxHeight: .infinity)
             .safeAreaInset(edge: .top) {
                 navigationContent
                     .frame(maxWidth: .infinity)
-                    .padding(.horizontal, 24)
+                    .padding(.horizontal, 12)
                     .padding(.bottom, 12)
-                    .background(
-                        LinearGradient(
-                            colors: [
-                                .lightC34246.opacity(0.3),
-                                .light438BF6.opacity(0.3)
-                            ],
-                            startPoint: .top,
-                            endPoint: .bottom
-                        )
-                        .overlay(.ultraThinMaterial)
-                        .roundedCorners(.bottomCorners, radius: 24)
-                        .ignoresSafeArea(.container, edges: .top)
-                    )
+                //                    .background(
+                //                        LinearGradient(
+                //                            colors: [
+                //                                .lightC34246.opacity(0.3),
+                //                                .light438BF6.opacity(0.3)
+                //                            ],
+                //                            startPoint: .top,
+                //                            endPoint: .bottom
+                //                        )
+                //                        Color.white
+                //                            .overlay(.ultraThinMaterial)
+                //                        .roundedCorners(.bottomCorners, radius: 24)
+                //                            .ignoresSafeArea(.container, edges: .top)
+                //                    )
             }
             .navigationBarHidden(true)
     }
     
     @ViewBuilder
     private var navigationContent: some View {
-        switch barType {
-        case .logo(let image):
-            ZStack {
-                backButtonView
-                    .frame(
-                        maxWidth: .infinity,
-                        alignment: .leading
-                    )
+        ZStack {
+            backButtonView
+                .frame(
+                    maxWidth: .infinity,
+                    alignment: .leading
+                )
+            
+            switch barType {
+            case .logo(let image):
                 image
                     .resizable()
                     .aspectRatio(contentMode: .fit)
                     .frame(maxHeight: 34)
                     .clipped()
-                rightView
-                    .frame(
-                        maxWidth: .infinity,
-                        alignment: .trailing
-                    )
-            }
-        case .title(let text):
-            ZStack {
-                backButtonView
-                    .frame(
-                        maxWidth: .infinity,
-                        alignment: .leading
-                    )
+            case .title(let text):
                 titleView(text: text)
-                rightView
-                    .frame(
-                        maxWidth: .infinity,
-                        alignment: .trailing
-                    )
+            case .none:
+                EmptyView()
             }
+            
+            rightView
+                .frame(
+                    maxWidth: .infinity,
+                    alignment: .trailing
+                )
         }
     }
     
@@ -97,7 +90,7 @@ struct NavigationBar<
     
     private func titleView(text: String) -> some View {
         Text(text)
-            .font(.rubikBlack22)
+            .font(.rubikMedium18)
             .lineLimit(2)
             .minimumScaleFactor(0.8)
             .foregroundColor(.light2B2B2B)
@@ -113,7 +106,8 @@ struct NavigationBar_Previews: PreviewProvider {
         
         var body: some View {
             NavigationBar(
-                barType: .title(title: .signupScreenTitle),///.logo(image: .generalLogo),
+                barType: .title(title: .signupScreenTitle),
+                leftButtonAction: nil,///.logo(image: .generalLogo),
                 contentView: {
                     ScrollView {
                         VStack {
@@ -124,6 +118,7 @@ struct NavigationBar_Previews: PreviewProvider {
                             Text(testText)
                         }
                     }
+                    .fillWithDefaultScreenBackground()
                     .padding(.horizontal)
                 },
                 rightView: {

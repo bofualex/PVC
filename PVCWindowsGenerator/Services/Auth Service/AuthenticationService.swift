@@ -63,6 +63,8 @@ class AuthenticationService: AuthenticationServiceProtocol {
         Auth.auth().addStateDidChangeListener { [weak self] (_, user) in
             if let user {
                 self?.currentUser = try? User(from: user)
+            } else {
+                self?.currentUser = nil
             }
         }
     }
