@@ -14,8 +14,6 @@ final class AuthCoordinator: NavigationCoordinatable {
     let dependencyContainer: any DependencyContainerProtocol
     
     @Root var start = makeStart
-    @Route(.push) var loginView = makeLoginView
-    @Route(.push) var signupView = makeSignupView
 
     init(dependencyContainer: any DependencyContainerProtocol) {
         self.dependencyContainer = dependencyContainer

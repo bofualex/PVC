@@ -30,7 +30,7 @@ struct LoadingView: View {
                 start: spinnerStart,
                 end: spinnerEndS2S3,
                 rotation: rotationDegreeS3,
-                color: .lightC34246,
+                color: .lightFAE396,
                 lineWidth: max(side / 10, 5)
             )
 
@@ -38,7 +38,7 @@ struct LoadingView: View {
                 start: spinnerStart,
                 end: spinnerEndS2S3,
                 rotation: rotationDegreeS2,
-                color: .lightEC8C34,
+                color: .light9DC2CE,
                 lineWidth: max(side / 10, 5)
             )
 
@@ -46,7 +46,7 @@ struct LoadingView: View {
                 start: spinnerStart,
                 end: spinnerEndS1,
                 rotation: rotationDegreeS1,
-                color: .light438BF6,
+                color: .light9DC2CE,
                 lineWidth: max(side / 10, 5)
             )
         }

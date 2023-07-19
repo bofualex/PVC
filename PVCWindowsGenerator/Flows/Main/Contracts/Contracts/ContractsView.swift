@@ -19,7 +19,7 @@ struct ContractsView: View {
                 content
             }
         )
-        .fillBackground(.indigo)
+        .fillWithDefaultScreenBackground()
     }
     
     private var content: some View {

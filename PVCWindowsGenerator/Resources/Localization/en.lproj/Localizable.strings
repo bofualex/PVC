@@ -47,6 +47,18 @@
 //MARK: - home
 "home_screen_title" = "home";
 
+//MARK: - home menu section
+"home_menu_section_in_progress" = "Contracts";
+"home_menu_section_quick_actions" = "Quick actions";
+
+//MARK: - home menu item
+"home_menu_item_create_offer" = "Create offer";
+"home_menu_item_materials" = "Materials";
+"home_menu_item_pending_to_install" = "Pending to install";
+"home_menu_item_in_the_making" = "Being constructed in the factory";
+"home_menu_item_team" = "Team members";
+"home_menu_item_vehicles" = "Vehicles";
+
 //MARK: - offers
 "offers_screen_title" = "offers";
 
@@ -55,3 +67,5 @@
 
 //MARK: - menu
 "menu_screen_title" = "menu";
+
+

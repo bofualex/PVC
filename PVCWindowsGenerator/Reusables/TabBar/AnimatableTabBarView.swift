@@ -54,7 +54,7 @@ struct AnimatableTabBarView: View {
             in: TabBarShape(centerX: centerX)
         )
         .shadow(
-            color: Color.black.opacity(0.1),
+            color: Color.light2B2B2B.opacity(0.05),
             radius: 5,
             x: 0,
             y: -5

@@ -12,7 +12,9 @@ extension HomeCoordinator {
 
     @ViewBuilder
     func makeStart() -> some View {
-        RoutesFactory.homeView()
+        RoutesFactory.homeView(
+            networkService: dependencyContainer.networkService
+        )
     }
 }
 

@@ -23,6 +23,18 @@ extension View {
     func roundedBorder(_ color: Color, cornerRadius: CGFloat, lineWidth: CGFloat = 1.5) -> some View {
         modifier(RoundedBorderModifier(color: color, cornerRadius: cornerRadius, lineWidth: lineWidth))
     }
+    
+    func cardViewBackground(
+        backgroundColor: Color = .lightF5EDEC,
+        _ action: VoidCallback? = nil
+    ) -> some View {
+        modifier(
+            CardViewModifier(
+                backgroundColor: backgroundColor,
+                action: action
+            )
+        )
+    }
 
     func readContentFrame(
         in coordinateSpace: CoordinateSpace = .global,

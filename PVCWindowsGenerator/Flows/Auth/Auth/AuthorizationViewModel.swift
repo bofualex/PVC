@@ -10,7 +10,7 @@ import Combine
 
 class AuthorizationViewModel: ObservableObject {
     
-    @Published var email = "jjj@ll.co"
+    @Published var email = ""
     @Published var password = ""
     @Published var reenteredPassword = ""
     

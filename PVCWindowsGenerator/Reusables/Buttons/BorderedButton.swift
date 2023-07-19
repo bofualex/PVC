@@ -13,8 +13,8 @@ extension Buttons {
         var isEnabled: Bool = true
         var isLoading: Bool = false
         var backgroundColor: Color = .lightFFFFFF.opacity(0.001)
-        var foregroundColor: Color = .lightC34246
-        var borderColor: Color = .light438BF6
+        var foregroundColor: Color = .lightEEEEEE
+        var borderColor: Color = .light2B2B2B
         var size: ButtonSize = .medium
         var animatedOnPress: Bool = true
         var action: VoidCallback? = nil

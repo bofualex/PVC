@@ -10,7 +10,7 @@ import SwiftUI
 extension Image {
     func resizableImage(
         size: CGSize,
-        contentMode: ContentMode = .fill,
+        contentMode: ContentMode = .fit,
         renderingMode: Image.TemplateRenderingMode? = nil
     ) -> some View {
         self

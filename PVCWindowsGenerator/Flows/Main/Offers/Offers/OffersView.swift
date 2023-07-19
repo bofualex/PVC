@@ -19,7 +19,7 @@ struct OffersView: View {
                 content
             }
         )
-        .fillBackground(.yellow)
+        .fillWithDefaultScreenBackground()
     }
     
     private var content: some View {

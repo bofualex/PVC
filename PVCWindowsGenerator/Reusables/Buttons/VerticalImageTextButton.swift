@@ -13,8 +13,8 @@ extension Buttons {
         let imageName: String
         var font: Font = .rubikSemiBold14
         var backgroundColor: Color = .lightFFFFFF.opacity(0.001)
-        var foregroundColor: Color = .lightC34246
-        var borderColor: Color = .lightC34246
+        var foregroundColor: Color = .lightEEEEEE
+        var borderColor: Color = .light2B2B2B
         var isSystemImage = false
         var action: VoidCallback? = nil
 

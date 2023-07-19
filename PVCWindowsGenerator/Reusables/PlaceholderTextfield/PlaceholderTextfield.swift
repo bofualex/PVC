@@ -25,8 +25,8 @@ struct PlaceholderTextfield: View {
     var textContentType: UITextContentType?
     var backgroundColor = Color.lightFFFFFF
     var foregroundColor = Color.light2B2B2B
-    var errorColor = Color.lightC34246
-    var focusedColor = Color.light438BF6
+    var errorColor = Color.lightF9DAD4
+    var focusedColor = Color.light9DC2CE
     
     var body: some View {
         ZStack(alignment: text.isEmpty ? .center : .top) {

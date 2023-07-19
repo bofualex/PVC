@@ -21,7 +21,7 @@ struct MenuView: View {
                 content
             }
         )
-        .fillBackground(.blue)
+        .fillWithDefaultScreenBackground()
     }
     
     private var content: some View {

@@ -18,47 +18,13 @@ enum RoutesFactory {
             )
         )
     }
-    
-    static func emailCheckView(
-        authService: AuthenticationServiceProtocol
-    ) -> some View {
-        EmailCheckView(
-            viewModel: .init(
-                authService: authService
-            )
-        )
-    }
-    
-    static func loginView(
-        authService: AuthenticationServiceProtocol,
-        email: String
-    ) -> some View {
-        LoginView(
-            viewModel: .init(
-                authService: authService,
-                email: email
-            )
-        )
-    }
-    
-    static func signupView(
-        authService: AuthenticationServiceProtocol,
-        email: String
-    ) -> some View {
-        SignupView(
-            viewModel: .init(
-                authService: authService,
-                email: email
-            )
-        )
-    }
-    
+
     static func tabBarView() -> some View {
         TabBarView(viewModel: .init())
     }
     
-    static func homeView() -> some View {
-        HomeView()
+    static func homeView(networkService: NetworkServiceProtocol) -> some View {
+        HomeView(viewModel: .init(networkService: networkService))
     }
     
     static func offersView() -> some View {

@@ -101,7 +101,7 @@ extension View {
     
     func errorDisplay(
         error: Binding<Error?>,
-        backgroundColor: Color = .lightC34246
+        backgroundColor: Color = .lightFF6584
     ) -> some View {
         var isPresentedBinding: Binding<Bool> {
             Binding {
@@ -119,7 +119,7 @@ extension View {
             ToastDisplayView(
                 isPresented: isPresentedBinding,
                 message: error.wrappedValue?.localizedDescription ?? "",
-                backgroundColor: .lightC34246
+                backgroundColor: .lightF9DAD4
             )
             .zIndex(1)
         }

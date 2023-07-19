@@ -58,6 +58,20 @@ extension String {
     static var homeScreenTitle: String { return LocalizableStringKeys.Home.screenTitle.localized }
 
 
+    /// HomeMenuSection
+    static var homeMenuSectionInProgress: String { return LocalizableStringKeys.HomeMenuSection.inProgress.localized }
+    static var homeMenuSectionQuickActions: String { return LocalizableStringKeys.HomeMenuSection.quickActions.localized }
+
+
+    /// HomeMenuItem
+    static var homeMenuItemCreateOffer: String { return LocalizableStringKeys.HomeMenuItem.createOffer.localized }
+    static var homeMenuItemMaterials: String { return LocalizableStringKeys.HomeMenuItem.materials.localized }
+    static var homeMenuItemPendingToInstall: String { return LocalizableStringKeys.HomeMenuItem.pendingToInstall.localized }
+    static var homeMenuItemInTheMaking: String { return LocalizableStringKeys.HomeMenuItem.inTheMaking.localized }
+    static var homeMenuItemTeam: String { return LocalizableStringKeys.HomeMenuItem.team.localized }
+    static var homeMenuItemVehicles: String { return LocalizableStringKeys.HomeMenuItem.vehicles.localized }
+
+
     /// Offers
     static var offersScreenTitle: String { return LocalizableStringKeys.Offers.screenTitle.localized }
 

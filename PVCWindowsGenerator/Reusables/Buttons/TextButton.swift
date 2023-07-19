@@ -12,7 +12,7 @@ extension Buttons {
         let title: String
         var isEnabled: Bool = true
         var isLoading: Bool = false
-        var foregroundColor: Color = .lightC34246
+        var foregroundColor: Color = .light2B2B2B
         var font: Font = .rubikSemiBold14
         var size: ButtonSize = .medium
         var action: VoidCallback? = nil

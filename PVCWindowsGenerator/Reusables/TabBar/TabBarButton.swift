@@ -29,7 +29,7 @@ struct TabBarButton: View {
                         .resizable()
                         .renderingMode(.template)
                         .frame(width: 26, height: 26)
-                        .foregroundColor(selected == value ? .light438BF6 : .light2B2B2B.opacity(0.3))
+                        .foregroundColor(selected == value ? .light9DC2CE : .light2B2B2B.opacity(0.3))
                         .scaleEffect(
                             .init(
                                 width: selected == value ? 1.2 : 1,
@@ -40,7 +40,7 @@ struct TabBarButton: View {
                     
                     Text(value.description)
                         .font(.rubikMedium12)
-                        .foregroundColor(selected == value ? .light438BF6 : .light2B2B2B.opacity(0.3))
+                        .foregroundColor(selected == value ? .light9DC2CE : .light2B2B2B.opacity(0.3))
                         .opacity(selected == value ? 1 : 0)
                 }
                 .padding(.top)

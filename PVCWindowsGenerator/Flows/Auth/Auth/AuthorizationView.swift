@@ -62,12 +62,11 @@ struct AuthorizationView: View {
         }
         .padding(.horizontal, 24)
         .padding(.top, 36)
-        .keyboardAdaptive()
         .gesture(
             dragGesture
-            .onEnded { value in
-                viewModel.handleDrag(with: value)
-            }
+                .onEnded { value in
+                    viewModel.handleDrag(with: value)
+                }
         )
     }
     

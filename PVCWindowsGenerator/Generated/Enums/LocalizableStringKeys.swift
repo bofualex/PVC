@@ -58,6 +58,20 @@ enum LocalizableStringKeys {
         case screenTitle = "home_screen_title"
     }
 
+    enum HomeMenuSection: String, LocalizableStringKey {
+        case inProgress = "home_menu_section_in_progress"
+        case quickActions = "home_menu_section_quick_actions"
+    }
+
+    enum HomeMenuItem: String, LocalizableStringKey {
+        case createOffer = "home_menu_item_create_offer"
+        case materials = "home_menu_item_materials"
+        case pendingToInstall = "home_menu_item_pending_to_install"
+        case inTheMaking = "home_menu_item_in_the_making"
+        case team = "home_menu_item_team"
+        case vehicles = "home_menu_item_vehicles"
+    }
+
     enum Offers: String, LocalizableStringKey {
         case screenTitle = "offers_screen_title"
     }

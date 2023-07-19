@@ -10,12 +10,15 @@ import Foundation
 
 enum ColorName: String {
     case light2B2B2B = "light2B2B2B"
-    case light438BF6 = "light438BF6"
-    case light4BD894 = "light4BD894"
+    case light787878 = "light787878"
     case light9DC2CE = "light9DC2CE"
-    case lightC34246 = "lightC34246"
-    case lightEC8C34 = "lightEC8C34"
+    case lightB4C9D3 = "lightB4C9D3"
+    case lightC6D7DC = "lightC6D7DC"
+    case lightDDEDFD = "lightDDEDFD"
     case lightEEEEEE = "lightEEEEEE"
     case lightF5EDEC = "lightF5EDEC"
+    case lightF9DAD4 = "lightF9DAD4"
+    case lightFAE396 = "lightFAE396"
+    case lightFF6584 = "lightFF6584"
     case lightFFFFFF = "lightFFFFFF"
 }
